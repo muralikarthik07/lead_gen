@@ -47,6 +47,10 @@ def main(argv=None):
     r = sub.add_parser("repro", help="generate twice with the same seed and compare row counts + checksums")
     r.add_argument("--scale", type=float, default=0.05); r.add_argument("--seed", type=int, default=20261022)
     r.add_argument("--out", default="output/repro")
+    w = sub.add_parser("serve", help="open the web UI (read-only API + frontend) on a generated dataset")
+    w.add_argument("--dir", default=None, help="dataset directory (default: output/full if present, else data/starter)")
+    w.add_argument("--host", default="127.0.0.1"); w.add_argument("--port", type=int, default=8000)
+    w.add_argument("--open", action="store_true", help="open the browser")
     d = sub.add_parser("dictionary", help="write the data dictionary markdown"); d.add_argument("--out", default="docs/DATA_DICTIONARY.md")
     a = p.parse_args(argv)
 
@@ -68,6 +72,21 @@ def main(argv=None):
         return 0 if s["overall"] == "PASS" else 1
     elif a.cmd == "evaluate":
         print(json.dumps(ev.evaluate(a.dir), indent=1))
+    elif a.cmd == "serve":
+        from . import server
+        d_ = a.dir or next((x for x in ("output/full", "data/starter") if os.path.exists(os.path.join(x, "csv", "lead.csv"))), "data/starter")
+        try:
+            httpd = server.serve(d_, a.host, a.port)
+        except FileNotFoundError as e:
+            print(e); return 2
+        url = f"http://{a.host}:{httpd.server_address[1]}/"
+        print(f"LeadScope UI on {url}  (dataset: {d_})  Ctrl+C to stop")
+        if a.open:
+            import webbrowser; webbrowser.open(url)
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\nstopped")
     elif a.cmd == "dictionary":
         os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
         open(a.out, "w").write(schema.data_dictionary_md())
