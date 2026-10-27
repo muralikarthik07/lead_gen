@@ -20,3 +20,11 @@ that no accidental duplicates occur (same-product leads for one person are ≥95
 **IDs.** Assigned after sorting by `created_at`, so counters are monotonic in time; never reused.
 
 **Not done / possible extensions.** Right-censored outcomes, rep capacity limits, reassignment events, multiple opportunities per lead, a trained ML baseline.
+
+## Web UI (LeadScope)
+* **Why stdlib + vanilla JS:** the project's selling point is "clone, run, verify". A zero-install server (`http.server`) and a no-build SPA keep that promise; the UI also works offline.
+* **Read-only by design:** the UI is a lens on exported files, so it cannot corrupt the dataset. The only write is `POST /api/revalidate`, which regenerates the validation/evaluation reports.
+* **Ground truth is opt-in:** hidden by default and returned by the API only with `truth=1`, so the UI itself demonstrates the "no leakage" rule.
+* **Live record checks are independent detectors:** the lead page recomputes score reproducibility, pre-conversion data, routing, consent and stage continuity for that one record; a test asserts these find exactly the ground-truth leads.
+* **Security:** localhost bind, GET-only data endpoints, path-traversal-safe static serving, `nosniff`, and `esc()` on every dynamic value (verified in a browser test).
+* **Bugs the UI review caught:** stale rule-set-v2 descriptions in `ScoreRule` (data bug, now validated), a navigation race where a slow page could overwrite a newer one, focus management that skipped the skip-link, clipped chart axes.

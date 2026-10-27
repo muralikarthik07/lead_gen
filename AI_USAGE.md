@@ -18,9 +18,9 @@ first version of the code, tests and documentation in one session. I did not wri
 
 ## What was verified (by running things, not by trusting the text)
 - `python -m leadgen generate` at full scale: exact volumes (20,000 leads / 10,000 contacts / 5,000 companies / 3,000 opportunities).
-- Validation: 96/96 invariants pass and each of the 7 anomaly detectors equals `ground_truth/anomalies.csv` exactly.
+- Validation (session 1; now 97/97 after a later guard was added): 96/96 invariants pass and each of the 7 anomaly detectors equals `ground_truth/anomalies.csv` exactly.
 - `python -m leadgen repro`: two same-seed runs give identical row counts and SHA-256 checksums.
-- `pytest`: 21 passing tests; mutation tests prove the validator fails on corrupted FK/PK/score/consent/enum/date data.
+- `pytest` (session 1: 21 tests; now 73, see below): mutation tests prove the validator fails on corrupted FK/PK/score/consent/enum/date data.
 
 ## Problems found and fixed during the session
 1. Win rate was ~65% of closed deals (unrealistic); recalibrated to ~37%.
@@ -28,6 +28,15 @@ first version of the code, tests and documentation in one session. I did not wri
 3. Validator crashed on corrupted data instead of reporting a failure; now returns FAIL, with a test.
 4. Two validator checks were vacuous (always passed); replaced with real checks.
 5. A mutation test for consent did not actually violate consent; rewritten so it does.
+
+## Session 2: web UI, tests, re-audit (also AI-generated)
+Asked Claude to add a modern frontend integrated with the project, run all tests, and re-check everything against the brief. It built the
+`serve` command, JSON API (`store.py`, `server.py`), the SPA (`leadgen/web/`), 52 more tests (API, brief compliance, 24 real-browser tests),
+a requirements-traceability matrix, and fixed problems found while reviewing screenshots and running the browser tests:
+1. `ScoreRule` v2 descriptions still quoted v1 points/caps (data bug); fixed in the generator and added a validator check + test.
+2. Navigation race condition (slow page overwriting a newer one); fixed, regression test added.
+3. Initial focus skipped the skip-link; clipped chart axes; ground-truth table overflow; missing accessible name on the phone-size switch.
+Verification done by running: 73 tests pass; brief-compliance tests also pass on the full 20k-lead dataset; screenshots reviewed in light, dark and phone widths.
 
 ## My own review (to be completed by me before submitting: do not leave blank)
 - [ ] I read `generator.py` end to end and can explain every phase.
