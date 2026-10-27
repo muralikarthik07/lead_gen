@@ -175,6 +175,8 @@ def _validate(out):
     add("Company.territory == territory(country)", "derived_values", [r["company_id"] for r in T["Company"] if ref.COUNTRIES[r["country"]][0] != r["territory"]])
     add("Company revenue / amounts positive", "derived_values", [r["company_id"] for r in T["Company"] if float(r["annual_revenue_usd"]) <= 0]
         + [r["opportunity_id"] for r in T["Opportunity"] if float(r["amount_usd"]) <= 0])
+    add("ScoreRule description states its own points/cap (per-unit rules)", "derived_values", [
+        r["rule_id"] for r in T["ScoreRule"] if r["operator"] == "per_unit" and f"({r['points']} each, max {r['cap_units']})" not in r["description"]])
     comps_by_score = defaultdict(list)
     for r in T["LeadScoreComponent"]:
         comps_by_score[r["score_id"]].append(r)

@@ -26,9 +26,9 @@ RULE_SPECS = [
     ("src_organic", "intent", "source", "eq", "organic_search", 4, None, "Source: organic search"),
     ("src_content", "intent", "source", "eq", "content_download", 2, None, "Source: content syndication"),
     ("demo_request", "intent", "demo_requests", "gte", "1", 20, None, "Requested a demo"),
-    ("pricing_visits", "intent", "pricing_visits", "per_unit", "1", 5, 2, "Pricing page visits (5 each, max 2)"),
-    ("email_clicks", "engagement", "email_clicks", "per_unit", "1", 2, 5, "Email clicks (2 each, max 5)"),
-    ("web_visits", "engagement", "web_visits", "per_unit", "1", 1, 10, "Web visits (1 each, max 10)"),
+    ("pricing_visits", "intent", "pricing_visits", "per_unit", "1", 5, 2, "Pricing page visits ({p} each, max {c})"),
+    ("email_clicks", "engagement", "email_clicks", "per_unit", "1", 2, 5, "Email clicks ({p} each, max {c})"),
+    ("web_visits", "engagement", "web_visits", "per_unit", "1", 1, 10, "Web visits ({p} each, max {c})"),
     ("recent_inbound", "engagement", "recent_inbound_7d", "eq", "1", 5, None, "Inbound engagement in the 7 days before scoring"),
     ("no_inbound", "engagement", "no_inbound_activity", "eq", "1", -5, None, "No inbound engagement at all"),
 ]
@@ -41,9 +41,10 @@ def build_rule_rows():
     for ver, eff_from, eff_to in ((1, V1_FROM, V2_FROM), (2, V2_FROM, None)):
         for i, (key, cat, feat, op, val, pts, cap, desc) in enumerate(RULE_SPECS, 1):
             ov = V2_OVERRIDES.get(key, {}) if ver == 2 else {}
+            p_, c_ = ov.get("points", pts), ov.get("cap", cap)
             rows.append(dict(rule_id=f"SR-v{ver}-{i:03d}", rule_version=ver, category=cat, feature=feat, operator=op,
-                             value=val, points=ov.get("points", pts), cap_units=ov.get("cap", cap),
-                             effective_from=eff_from, effective_to=eff_to, description=desc))
+                             value=val, points=p_, cap_units=c_, effective_from=eff_from, effective_to=eff_to,
+                             description=desc.format(p=p_, c=c_)))
     return rows
 
 
