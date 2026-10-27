@@ -1,0 +1,35 @@
+campaign_id,campaign_name,channel,product_focus,start_date,end_date,budget_usd,status
+CMP-001,Content Syndication | All Products | Dec 2025,content_download,,2025-12-01,2026-02-20,18000.00,completed
+CMP-002,Paid Search | All Products | Dec 2025,paid_search,,2025-12-01,2026-02-08,49500.00,completed
+CMP-003,Partner | Automation | Dec 2025,partner,Automation,2025-12-01,2026-02-16,73500.00,completed
+CMP-004,Referral Program | Security | Dec 2025,referral,Security,2025-12-01,2026-02-25,21500.00,completed
+CMP-005,Trade Show | Platform | Dec 2025,trade_show,Platform,2025-12-01,2026-01-15,45000.00,completed
+CMP-006,Webinar | Analytics | Dec 2025,webinar,Analytics,2025-12-01,2026-02-27,12000.00,completed
+CMP-007,Trade Show | Analytics | Jan 2026,trade_show,Analytics,2026-01-06,2026-04-02,55500.00,completed
+CMP-008,Content Syndication | All Products | Feb 2026,content_download,,2026-02-08,2026-04-02,35000.00,completed
+CMP-009,Paid Search | All Products | Feb 2026,paid_search,,2026-02-09,2026-04-15,16500.00,completed
+CMP-010,Partner | Platform | Feb 2026,partner,Platform,2026-02-15,2026-05-14,10000.00,completed
+CMP-011,Referral Program | Analytics | Feb 2026,referral,Analytics,2026-02-19,2026-04-06,17000.00,completed
+CMP-012,Webinar | Security | Feb 2026,webinar,Security,2026-02-20,2026-05-07,42000.00,completed
+CMP-013,Content Syndication | All Products | Mar 2026,content_download,,2026-03-20,2026-05-28,13000.00,completed
+CMP-014,Referral Program | All Products | Mar 2026,referral,,2026-03-25,2026-06-07,38000.00,completed
+CMP-015,Trade Show | Platform | Mar 2026,trade_show,Platform,2026-03-25,2026-06-13,9000.00,completed
+CMP-016,Paid Search | All Products | Apr 2026,paid_search,,2026-04-15,2026-06-25,41000.00,completed
+CMP-017,Partner | All Products | May 2026,partner,,2026-05-01,2026-07-12,70000.00,completed
+CMP-018,Webinar | Platform | May 2026,webinar,Platform,2026-05-01,2026-06-20,60000.00,completed
+CMP-019,Content Syndication | All Products | May 2026,content_download,,2026-05-18,2026-07-12,8000.00,completed
+CMP-020,Referral Program | Platform | Jun 2026,referral,Platform,2026-06-06,2026-07-20,27000.00,completed
+CMP-021,Trade Show | All Products | Jun 2026,trade_show,,2026-06-08,2026-08-28,78500.00,completed
+CMP-022,Webinar | Analytics | Jun 2026,webinar,Analytics,2026-06-09,2026-08-31,53500.00,completed
+CMP-023,Paid Search | Security | Jun 2026,paid_search,Security,2026-06-23,2026-09-09,63500.00,completed
+CMP-024,Content Syndication | All Products | Jul 2026,content_download,,2026-07-11,2026-09-29,23000.00,completed
+CMP-025,Partner | Automation | Jul 2026,partner,Automation,2026-07-13,2026-09-13,39500.00,completed
+CMP-026,Referral Program | All Products | Jul 2026,referral,,2026-07-18,2026-09-08,66000.00,completed
+CMP-027,Webinar | All Products | Aug 2026,webinar,,2026-08-17,2026-10-03,21500.00,completed
+CMP-028,Paid Search | Security | Aug 2026,paid_search,Security,2026-08-27,2026-11-03,15000.00,active
+CMP-029,Referral Program | All Products | Aug 2026,referral,,2026-08-27,2026-11-20,47000.00,active
+CMP-030,Trade Show | Security | Aug 2026,trade_show,Security,2026-08-28,2026-11-22,35500.00,active
+CMP-031,Partner | Analytics | Sep 2026,partner,Analytics,2026-09-09,2026-11-25,65500.00,active
+CMP-032,Content Syndication | All Products | Sep 2026,content_download,,2026-09-22,2026-12-04,14500.00,active
+CMP-033,Webinar | All Products | Sep 2026,webinar,,2026-09-26,2026-11-13,68000.00,active
+CMP-034,Paid Search | All Products | Oct 2026,paid_search,,2026-10-23,2026-12-26,47500.00,planned

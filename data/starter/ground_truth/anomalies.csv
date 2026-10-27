@@ -1,0 +1,44 @@
+anomaly_id,issue_type,table,record_id,related_ids,description
+GT-00001,duplicate_contact,Contact,CON-000087,CON-000072,Contact duplicates master contact (same normalised email)
+GT-00002,duplicate_contact,Contact,CON-000141,CON-000005,Contact duplicates master contact (same normalised email)
+GT-00003,duplicate_contact,Contact,CON-000198,CON-000099,Contact duplicates master contact (same normalised email)
+GT-00004,duplicate_contact,Contact,CON-000262,CON-000120,Contact duplicates master contact (same normalised email)
+GT-00005,duplicate_contact,Contact,CON-000265,CON-000223,Contact duplicates master contact (same normalised email)
+GT-00006,duplicate_contact,Contact,CON-000266,CON-000138,Contact duplicates master contact (same normalised email)
+GT-00007,duplicate_contact,Contact,CON-000270,CON-000116,Contact duplicates master contact (same normalised email)
+GT-00008,duplicate_contact,Contact,CON-000279,CON-000153,Contact duplicates master contact (same normalised email)
+GT-00009,duplicate_contact,Contact,CON-000284,CON-000263,Contact duplicates master contact (same normalised email)
+GT-00010,duplicate_contact,Contact,CON-000293,CON-000237,Contact duplicates master contact (same normalised email)
+GT-00011,duplicate_contact,Contact,CON-000330,CON-000212,Contact duplicates master contact (same normalised email)
+GT-00012,duplicate_contact,Contact,CON-000354,CON-000296,Contact duplicates master contact (same normalised email)
+GT-00013,duplicate_contact,Contact,CON-000363,CON-000288,Contact duplicates master contact (same normalised email)
+GT-00014,duplicate_contact,Contact,CON-000429,CON-000334,Contact duplicates master contact (same normalised email)
+GT-00015,duplicate_contact,Contact,CON-000456,CON-000419,Contact duplicates master contact (same normalised email)
+GT-00016,duplicate_creates_duplicate_opportunity,Opportunity,OPP-2026-000019,LEAD-2026-000237;LEAD-2026-000104;OPP-2026-000011,Opportunity created from a duplicate lead whose master lead also has an opportunity
+GT-00017,duplicate_creates_duplicate_opportunity,Opportunity,OPP-2026-000103,LEAD-2026-000734;LEAD-2026-000486;OPP-2026-000081,Opportunity created from a duplicate lead whose master lead also has an opportunity
+GT-00018,duplicate_lead,Lead,LEAD-2026-000091,LEAD-2026-000074,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00019,duplicate_lead,Lead,LEAD-2026-000159,LEAD-2026-000005,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00020,duplicate_lead,Lead,LEAD-2026-000237,LEAD-2026-000104,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00021,duplicate_lead,Lead,LEAD-2026-000338,LEAD-2026-000128,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00022,duplicate_lead,Lead,LEAD-2026-000344,LEAD-2026-000274,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00023,duplicate_lead,Lead,LEAD-2026-000345,LEAD-2026-000155,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00024,duplicate_lead,Lead,LEAD-2026-000350,LEAD-2026-000124,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00025,duplicate_lead,Lead,LEAD-2026-000368,LEAD-2026-000174,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00026,duplicate_lead,Lead,LEAD-2026-000374,LEAD-2026-000339,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00027,duplicate_lead,Lead,LEAD-2026-000391,LEAD-2026-000300,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00028,duplicate_lead,Lead,LEAD-2026-000474,LEAD-2026-000256,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00029,duplicate_lead,Lead,LEAD-2026-000529,LEAD-2026-000397,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00030,duplicate_lead,Lead,LEAD-2026-000543,LEAD-2026-000382,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00031,duplicate_lead,Lead,LEAD-2026-000734,LEAD-2026-000486,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00032,duplicate_lead,Lead,LEAD-2026-000825,LEAD-2026-000704,Lead duplicates master lead (same normalised email + product within 90 days)
+GT-00033,lead_assigned_outside_territory,Lead,LEAD-2026-000158,REP-013,Lead territory NORAM routed to rep in LATAM
+GT-00034,lead_assigned_outside_territory,Lead,LEAD-2026-000656,REP-020,Lead territory INDIA routed to rep in EMEA-N
+GT-00035,opted_out_lead_contacted,Activity,ACT-LEAD-2026-000102-011,LEAD-2026-000102;CNS-000175,Outbound email sent while the contact's email consent was opt_out
+GT-00036,opted_out_lead_contacted,Activity,ACT-LEAD-2026-000262-015,LEAD-2026-000262;CNS-000484,Outbound email sent while the contact's email consent was opt_out
+GT-00037,opted_out_lead_contacted,Activity,ACT-LEAD-2026-000294-003,LEAD-2026-000294;CNS-000210,Outbound email sent while the contact's email consent was opt_out
+GT-00038,opted_out_lead_contacted,Activity,ACT-LEAD-2026-000410-013,LEAD-2026-000410;CNS-000687,Outbound email sent while the contact's email consent was opt_out
+GT-00039,score_uses_post_conversion_event,LeadScore,SCR-LEAD-2026-000165-02,LEAD-2026-000165;OPP-2026-000026,Rescore at 2026-04-04T06:50:40 counts 5 activities after opportunity creation; score 44 -> 57
+GT-00040,score_uses_post_conversion_event,LeadScore,SCR-LEAD-2026-000230-02,LEAD-2026-000230;OPP-2026-000030,Rescore at 2026-04-30T06:21:18 counts 14 activities after opportunity creation; score 48 -> 78
+GT-00041,score_uses_post_conversion_event,LeadScore,SCR-LEAD-2026-000922-02,LEAD-2026-000922;OPP-2026-000141,Rescore at 2026-09-15T20:26:45 counts 3 activities after opportunity creation; score 72 -> 89
+GT-00042,stage_history_gap,Opportunity,OPP-2026-000117,STG-OPP-2026-000117-03,Missing StageHistory seq 3 (Discovery -> Proposal)
+GT-00043,stage_history_gap,Opportunity,OPP-2026-000120,STG-OPP-2026-000120-02,Missing StageHistory seq 2 (Qualification -> Discovery)

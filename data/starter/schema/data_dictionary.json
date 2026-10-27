@@ -1,0 +1,1692 @@
+[
+ {
+  "table": "Company",
+  "pk": [
+   "company_id"
+  ],
+  "description": "Master data: prospect organisations.",
+  "lifecycle": "Created once; never deleted.",
+  "columns": [
+   {
+    "name": "company_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "CO-000001 sequence by created_at, immutable",
+    "fk": "",
+    "pattern": "^CO-\\d{6}$"
+   },
+   {
+    "name": "company_name",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "domain",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "reserved .example TLD: no real domains",
+    "fk": "",
+    "pattern": "^[a-z0-9]+\\.example$"
+   },
+   {
+    "name": "industry",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "Software",
+     "Financial Services",
+     "Healthcare",
+     "Manufacturing",
+     "Retail",
+     "Education",
+     "Logistics",
+     "Energy",
+     "Media",
+     "Public Sector"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "employee_count",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "employees",
+    "unique": false,
+    "rule": ">= 1",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "employee_band",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "1-10",
+     "11-50",
+     "51-200",
+     "201-1000",
+     "1000+"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "derived: must equal band_of(employee_count)",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "annual_revenue_usd",
+    "type": "real",
+    "required": true,
+    "allowed": [],
+    "unit": "USD",
+    "unique": false,
+    "rule": "> 0; ~ employees x revenue/employee",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "country",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "US",
+     "CA",
+     "BR",
+     "MX",
+     "AR",
+     "CL",
+     "CO",
+     "GB",
+     "DE",
+     "NL",
+     "SE",
+     "IE",
+     "FR",
+     "ES",
+     "IT",
+     "AE",
+     "ZA",
+     "PT",
+     "AU",
+     "SG",
+     "JP",
+     "IN"
+    ],
+    "unit": "ISO-3166 alpha-2",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "territory",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "NORAM",
+     "LATAM",
+     "EMEA-N",
+     "EMEA-S",
+     "APAC",
+     "INDIA"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "derived from country",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "created_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "UTC",
+    "unique": false,
+    "rule": "<= first contact created_at",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "Contact",
+  "pk": [
+   "contact_id"
+  ],
+  "description": "Master data: people at companies.",
+  "lifecycle": "Duplicate records are kept and linked, never deleted or merged away.",
+  "columns": [
+   {
+    "name": "contact_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^CON-\\d{6}$"
+   },
+   {
+    "name": "company_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Company.company_id",
+    "pattern": ""
+   },
+   {
+    "name": "first_name",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "last_name",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "email",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "syntactically valid; NOT unique across duplicate records (dedupe key = normalised email)",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "email_type",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "corporate",
+     "free"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "phone",
+    "type": "text",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "fictional 555 numbers only",
+    "fk": "",
+    "pattern": "^\\+\\d{1,3}-555-\\d{4}$"
+   },
+   {
+    "name": "job_title",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "seniority",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "c_level",
+     "vp",
+     "director",
+     "manager",
+     "individual"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "created_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "UTC",
+    "unique": false,
+    "rule": "= created_at of the contact's first lead",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "duplicate_of_contact_id",
+    "type": "text",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "set by the dedupe step; NULL for master records",
+    "fk": "Contact.contact_id",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "Campaign",
+  "pk": [
+   "campaign_id"
+  ],
+  "description": "Marketing campaigns that source leads. organic_search leads have no campaign (optional FK).",
+  "lifecycle": "planned -> active -> completed (derived).",
+  "columns": [
+   {
+    "name": "campaign_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^CMP-\\d{3}$"
+   },
+   {
+    "name": "campaign_name",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "channel",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "paid_search",
+     "webinar",
+     "trade_show",
+     "referral",
+     "partner",
+     "content_download"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "equals the source of leads attributed to it",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "product_focus",
+    "type": "text",
+    "required": false,
+    "allowed": [
+     "Platform",
+     "Analytics",
+     "Automation",
+     "Security"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "NULL = all products",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "start_date",
+    "type": "date",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "end_date",
+    "type": "date",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": ">= start_date",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "budget_usd",
+    "type": "real",
+    "required": true,
+    "allowed": [],
+    "unit": "USD",
+    "unique": false,
+    "rule": "> 0",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "status",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "planned",
+     "active",
+     "completed"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "derived from dates vs as_of",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "SalesRep",
+  "pk": [
+   "rep_id"
+  ],
+  "description": "Sales representatives.",
+  "lifecycle": "",
+  "columns": [
+   {
+    "name": "rep_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^REP-\\d{3}$"
+   },
+   {
+    "name": "rep_name",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "territory",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "NORAM",
+     "LATAM",
+     "EMEA-N",
+     "EMEA-S",
+     "APAC",
+     "INDIA"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "home territory",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "hire_date",
+    "type": "date",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "is_active",
+    "type": "bool",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "inactive reps are never routed new leads",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "RepCoverage",
+  "pk": [
+   "rep_id",
+   "territory",
+   "product"
+  ],
+  "description": "Bridge table SalesRep N:M (territory x product); the routing rulebook.",
+  "lifecycle": "",
+  "columns": [
+   {
+    "name": "rep_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "SalesRep.rep_id",
+    "pattern": ""
+   },
+   {
+    "name": "territory",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "NORAM",
+     "LATAM",
+     "EMEA-N",
+     "EMEA-S",
+     "APAC",
+     "INDIA"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "product",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "Platform",
+     "Analytics",
+     "Automation",
+     "Security"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "effective_from",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "UTC",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "effective_to",
+    "type": "datetime",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "exclusive upper bound; NULL = open-ended",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "Consent",
+  "pk": [
+   "consent_id"
+  ],
+  "description": "Consent as an append-only timeline per contact and channel. No consent record => no outbound contact.",
+  "lifecycle": "opt_in -> opt_out -> (optionally) opt_in; each change is a new row, old rows are closed with effective_to.",
+  "columns": [
+   {
+    "name": "consent_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^CNS-\\d{6}$"
+   },
+   {
+    "name": "contact_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Contact.contact_id",
+    "pattern": ""
+   },
+   {
+    "name": "channel",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "email",
+     "phone"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "status",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "opt_in",
+     "opt_out"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "effective_from",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "UTC",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "effective_to",
+    "type": "datetime",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "exclusive upper bound; NULL = current. Periods per (contact, channel) are contiguous and non-overlapping",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "capture_method",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "web_form",
+     "event_badge_scan",
+     "partner_transfer",
+     "sales_call",
+     "user_request"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "Lead",
+  "pk": [
+   "lead_id"
+  ],
+  "description": "A marketing/sales inquiry. Core transactional entity.",
+  "lifecycle": "New -> Working -> Qualified -> Converted; side exits Disqualified / Stale / Duplicate (derived snapshot; history lives in Activity/Task/StageHistory).",
+  "columns": [
+   {
+    "name": "lead_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^LEAD-\\d{4}-\\d{6}$"
+   },
+   {
+    "name": "contact_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Contact.contact_id",
+    "pattern": ""
+   },
+   {
+    "name": "company_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "must equal the contact's company_id",
+    "fk": "Company.company_id",
+    "pattern": ""
+   },
+   {
+    "name": "campaign_id",
+    "type": "text",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Campaign.campaign_id",
+    "pattern": ""
+   },
+   {
+    "name": "consent_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "the email consent period in force at created_at",
+    "fk": "Consent.consent_id",
+    "pattern": ""
+   },
+   {
+    "name": "source",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "paid_search",
+     "organic_search",
+     "webinar",
+     "trade_show",
+     "referral",
+     "partner",
+     "content_download"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "product_interest",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "Platform",
+     "Analytics",
+     "Automation",
+     "Security"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "territory",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "NORAM",
+     "LATAM",
+     "EMEA-N",
+     "EMEA-S",
+     "APAC",
+     "INDIA"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "derived from company territory",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "created_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "UTC",
+    "unique": false,
+    "rule": "within the campaign window when campaign_id is set",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "assigned_rep_id",
+    "type": "text",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "rep must cover (territory, product) in RepCoverage and be active",
+    "fk": "SalesRep.rep_id",
+    "pattern": ""
+   },
+   {
+    "name": "routed_at",
+    "type": "datetime",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": ">= created_at",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "routing_rule",
+    "type": "text",
+    "required": false,
+    "allowed": [
+     "territory_product_least_loaded",
+     "duplicate_follows_master"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "status",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "New",
+     "Working",
+     "Qualified",
+     "Converted",
+     "Disqualified",
+     "Duplicate",
+     "Stale"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "DERIVED SNAPSHOT as of as_of; depends on outcomes (e.g. Converted) - NOT a legitimate model feature",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "duplicate_of_lead_id",
+    "type": "text",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "set by dedupe step",
+    "fk": "Lead.lead_id",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "Task",
+  "pk": [
+   "task_id"
+  ],
+  "description": "Follow-up tasks created from score tier. Consent-gated.",
+  "lifecycle": "open -> completed | overdue | cancelled (derived at as_of).",
+  "columns": [
+   {
+    "name": "task_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^TASK-LEAD-\\d{4}-\\d{6}-\\d{3}$"
+   },
+   {
+    "name": "lead_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Lead.lead_id",
+    "pattern": ""
+   },
+   {
+    "name": "rep_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "= lead.assigned_rep_id",
+    "fk": "SalesRep.rep_id",
+    "pattern": ""
+   },
+   {
+    "name": "task_type",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "call",
+     "email",
+     "demo"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "priority",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "high",
+     "medium",
+     "low"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "from score tier: A/B high-medium, C low",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "created_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "= initial score time",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "due_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": ">= created_at",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "completed_at",
+    "type": "datetime",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": ">= created_at; only when status = completed",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "status",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "open",
+     "completed",
+     "overdue",
+     "cancelled"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "cancel_reason",
+    "type": "text",
+    "required": false,
+    "allowed": [
+     "no_consent",
+     "opted_out"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "required iff status = cancelled",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "Activity",
+  "pk": [
+   "activity_id"
+  ],
+  "description": "Immutable activity history per lead.",
+  "lifecycle": "Append-only.",
+  "columns": [
+   {
+    "name": "activity_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "ACT-<lead-id>-NNN in time order",
+    "fk": "",
+    "pattern": "^ACT-LEAD-\\d{4}-\\d{6}-\\d{3}$"
+   },
+   {
+    "name": "lead_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Lead.lead_id",
+    "pattern": ""
+   },
+   {
+    "name": "activity_type",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "form_submit",
+     "web_visit",
+     "pricing_page_visit",
+     "content_download",
+     "demo_request",
+     "email_open",
+     "email_click",
+     "email_outbound",
+     "call_outbound",
+     "demo_delivered",
+     "proposal_sent",
+     "meeting"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "direction",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "inbound",
+     "outbound"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "fixed by activity_type",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "channel",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "web",
+     "email",
+     "phone",
+     "video"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "fixed by activity_type",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "occurred_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": ">= lead.created_at",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "rep_id",
+    "type": "text",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "SalesRep.rep_id",
+    "pattern": ""
+   },
+   {
+    "name": "task_id",
+    "type": "text",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Task.task_id",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "ScoreRule",
+  "pk": [
+   "rule_id"
+  ],
+  "description": "Transparent, versioned scoring rules (effective-dated).",
+  "lifecycle": "v1 superseded by v2 on 2026-06-01; v1 rows are kept.",
+  "columns": [
+   {
+    "name": "rule_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^SR-v\\d-\\d{3}$"
+   },
+   {
+    "name": "rule_version",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "category",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "fit",
+     "intent",
+     "engagement"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "feature",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "operator",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "eq",
+     "gte",
+     "per_unit"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "value",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "eq: compared as text; gte: numeric threshold; per_unit: unused",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "points",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "score points",
+    "unique": false,
+    "rule": "may be negative",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "cap_units",
+    "type": "integer",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "per_unit only: max units counted",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "effective_from",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "effective_to",
+    "type": "datetime",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "exclusive upper bound",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "description",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "LeadScore",
+  "pk": [
+   "score_id"
+  ],
+  "description": "Score events (append-only). One 'initial' score per non-duplicate lead.",
+  "lifecycle": "",
+  "columns": [
+   {
+    "name": "score_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^SCR-LEAD-\\d{4}-\\d{6}-\\d{2}$"
+   },
+   {
+    "name": "lead_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Lead.lead_id",
+    "pattern": ""
+   },
+   {
+    "name": "scored_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "score uses only activities with occurred_at <= scored_at",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "rule_version",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "version effective at scored_at",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "raw_score",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "= sum of component points",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "total_score",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "0-100",
+    "unique": false,
+    "rule": "= clamp(raw_score, 0, 100)",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "tier",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "A",
+     "B",
+     "C",
+     "D"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "A>=55, B>=40, C>=25, else D",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "trigger",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "initial",
+     "rescore"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "model evaluation must use trigger = initial",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "LeadScoreComponent",
+  "pk": [
+   "score_id",
+   "rule_id"
+  ],
+  "description": "Bridge Lead(Score) N:M ScoreRule: explains every score (traceability).",
+  "lifecycle": "",
+  "columns": [
+   {
+    "name": "score_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "LeadScore.score_id",
+    "pattern": ""
+   },
+   {
+    "name": "rule_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "ScoreRule.rule_id",
+    "pattern": ""
+   },
+   {
+    "name": "units",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": ">= 1",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "points",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "= rule.points x units",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "Opportunity",
+  "pk": [
+   "opportunity_id"
+  ],
+  "description": "Sales opportunity created from a converted lead.",
+  "lifecycle": "Qualification -> Discovery -> Proposal -> Negotiation -> Closed Won | Closed Lost.",
+  "columns": [
+   {
+    "name": "opportunity_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^OPP-\\d{4}-\\d{6}$"
+   },
+   {
+    "name": "lead_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "at most one opportunity per lead",
+    "fk": "Lead.lead_id",
+    "pattern": ""
+   },
+   {
+    "name": "company_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Company.company_id",
+    "pattern": ""
+   },
+   {
+    "name": "contact_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Contact.contact_id",
+    "pattern": ""
+   },
+   {
+    "name": "rep_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "SalesRep.rep_id",
+    "pattern": ""
+   },
+   {
+    "name": "product",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "Platform",
+     "Analytics",
+     "Automation",
+     "Security"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "amount_usd",
+    "type": "real",
+    "required": true,
+    "allowed": [],
+    "unit": "USD",
+    "unique": false,
+    "rule": "> 0",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "created_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": ">= lead score time",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "current_stage",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "Qualification",
+     "Discovery",
+     "Proposal",
+     "Negotiation",
+     "Closed Won",
+     "Closed Lost"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "= to_stage of the latest StageHistory row",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "status",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "open",
+     "won",
+     "lost"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "derived from current_stage",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "closed_at",
+    "type": "datetime",
+    "required": false,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "= changed_at of the closing StageHistory row",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "outcome_reason",
+    "type": "text",
+    "required": false,
+    "allowed": [
+     "product_fit",
+     "price",
+     "relationship",
+     "features",
+     "budget",
+     "competitor",
+     "no_decision",
+     "timing",
+     "not_a_fit"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "required iff status in (won, lost)",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ },
+ {
+  "table": "StageHistory",
+  "pk": [
+   "stage_history_id"
+  ],
+  "description": "Append-only stage-transition events; the opportunity's history is never overwritten.",
+  "lifecycle": "",
+  "columns": [
+   {
+    "name": "stage_history_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": true,
+    "rule": "",
+    "fk": "",
+    "pattern": "^STG-OPP-\\d{4}-\\d{6}-\\d{2}$"
+   },
+   {
+    "name": "opportunity_id",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "Opportunity.opportunity_id",
+    "pattern": ""
+   },
+   {
+    "name": "seq",
+    "type": "integer",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "1..n consecutive per opportunity",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "from_stage",
+    "type": "text",
+    "required": false,
+    "allowed": [
+     "Qualification",
+     "Discovery",
+     "Proposal",
+     "Negotiation",
+     "Closed Won",
+     "Closed Lost"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "NULL only for seq 1",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "to_stage",
+    "type": "text",
+    "required": true,
+    "allowed": [
+     "Qualification",
+     "Discovery",
+     "Proposal",
+     "Negotiation",
+     "Closed Won",
+     "Closed Lost"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "changed_at",
+    "type": "datetime",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "non-decreasing within an opportunity",
+    "fk": "",
+    "pattern": ""
+   },
+   {
+    "name": "transition_reason",
+    "type": "text",
+    "required": true,
+    "allowed": [],
+    "unit": "",
+    "unique": false,
+    "rule": "",
+    "fk": "",
+    "pattern": ""
+   }
+  ]
+ }
+]

@@ -1,0 +1,144 @@
+{
+ "files": {
+  "SOURCE_MANIFEST.md": {
+   "rows": null,
+   "sha256": "b4dab1eae9f285ae1a293dce90f571f3c17ea4b1f982136ca11e3c68f0ba58ad",
+   "bytes": 334
+  },
+  "csv/activity.csv": {
+   "rows": 19724,
+   "sha256": "5380a673855a9e638164d83674967bb44558bdf4d11e176c5caa019cc9dec3a7",
+   "bytes": 1811218
+  },
+  "csv/campaign.csv": {
+   "rows": 34,
+   "sha256": "90c103ac77f7312c5a0e0ea67df549143063370c3a5ba74f6ce024cca68cdce9",
+   "bytes": 3542
+  },
+  "csv/company.csv": {
+   "rows": 250,
+   "sha256": "e53dd7ebc6b444c6933fd6b7e5ce1158e624bc1fc0a7ceef8a8da4047c8830d6",
+   "bytes": 31472
+  },
+  "csv/consent.csv": {
+   "rows": 764,
+   "sha256": "f0dd2565c78b990c17d5acc3dd4b73bf8ddece5fd4372a8b77660b580e1c9f7d",
+   "bytes": 52119
+  },
+  "csv/contact.csv": {
+   "rows": 500,
+   "sha256": "bdffc6abaacf8327bd1c19db49a69c7681b0796d6a51e1d27c7bf179dabdd08f",
+   "bytes": 69476
+  },
+  "csv/lead.csv": {
+   "rows": 1000,
+   "sha256": "7809ab32d0cc2ab421eb7fe3711644f0c13911bc5b5fe53b51fe7c9e1ba479d9",
+   "bytes": 171536
+  },
+  "csv/lead_score.csv": {
+   "rows": 988,
+   "sha256": "2ce170cb844bb781e7e9aff6472579f3693281a5432f5a77d52c4812109ca80c",
+   "bytes": 78105
+  },
+  "csv/lead_score_component.csv": {
+   "rows": 5939,
+   "sha256": "828110d923462a9099ecfd28cab6d02dfbba68a1f1b79ef47028bb6a4671a915",
+   "bytes": 227170
+  },
+  "csv/opportunity.csv": {
+   "rows": 150,
+   "sha256": "2dccfabda1eae0fd0997eee224610b696fae106de753b9e395a49583ed707abe",
+   "bytes": 21821
+  },
+  "csv/rep_coverage.csv": {
+   "rows": 72,
+   "sha256": "e162ba3d11ba5a0e7e05197e0691841e64cfbde5c4dc806e65cb6cc90c8c286b",
+   "bytes": 3287
+  },
+  "csv/sales_rep.csv": {
+   "rows": 41,
+   "sha256": "fc3a5862cb54b916bd2dd6931948a7906b75b8d6b19dcbd1589571639782c88d",
+   "bytes": 1656
+  },
+  "csv/score_rule.csv": {
+   "rows": 46,
+   "sha256": "71e39bf4d6f6a29c9be7b762f19db90f8c5240c5cc84a024daf286e8d16b3572",
+   "bytes": 4699
+  },
+  "csv/stage_history.csv": {
+   "rows": 579,
+   "sha256": "57d93e1d73fb795abe2f9937a47caffde7948d894146aa315f016b22ec665221",
+   "bytes": 56268
+  },
+  "csv/task.csv": {
+   "rows": 1122,
+   "sha256": "4e7e32ac95fae6978b02d01342d6f1c74da77195b18f0072a96c4ead7608b03c",
+   "bytes": 147046
+  },
+  "evaluation_report.json": {
+   "rows": null,
+   "sha256": "78808e4fedeae0d600ccfed45f3d2a154f4efa2fd15e23850c58bcffd30c5f0e",
+   "bytes": 2126
+  },
+  "evaluation_report.md": {
+   "rows": null,
+   "sha256": "5a549645a5d28bdcf431972ab9c111f319f549b43a5b6b80908340067abd4ef4",
+   "bytes": 1505
+  },
+  "ground_truth/anomalies.csv": {
+   "rows": 43,
+   "sha256": "32ae815bc1c202a00d6d4b3f555935299952729e0587f25f16b68aa055ac4c8e",
+   "bytes": 6061
+  },
+  "ground_truth/anomalies.json": {
+   "rows": null,
+   "sha256": "e01bc79ec3e2e67241f03c9080340b3b578564d012e93075d49752525a1d41da",
+   "bytes": 9784
+  },
+  "ground_truth/lead_labels.csv": {
+   "rows": 1000,
+   "sha256": "877085e94ef4991c7482f85bbb5888f6f316f82552388e483a937d5eab90c93c",
+   "bytes": 50381
+  },
+  "ground_truth/lead_labels.json": {
+   "rows": null,
+   "sha256": "37a76f94abca5e57b4ea2d381baef3bfed8534f2a932e75d3321435875a59b8f",
+   "bytes": 249458
+  },
+  "run_metadata.json": {
+   "rows": null,
+   "sha256": "4673de95d89d65f5a815e67e15026df067b77d0428a6019b75d411490cdb39d0",
+   "bytes": 787
+  },
+  "schema/data_dictionary.json": {
+   "rows": null,
+   "sha256": "58ea33141012ff31f68ac55ab4309259fc33499a8e68054702ff5cad53f62a6b",
+   "bytes": 31116
+  },
+  "schema/data_dictionary.md": {
+   "rows": null,
+   "sha256": "7a9c6eb130127a2c1be0e70c1640e1ef78004204bfa2da8dd67313215b55f224",
+   "bytes": 15416
+  },
+  "schema/schema.sql": {
+   "rows": null,
+   "sha256": "a052045f64dbced409397d5e9e8081d0ae39d323e9ab233b90157df6c7e8ae2c",
+   "bytes": 8313
+  },
+  "sql/seed.sql": {
+   "rows": null,
+   "sha256": "9b9f806567aca16f01ea55b01d9df3fe96df30df530c98e42388fc15691318b9",
+   "bytes": 4258045
+  },
+  "validation_summary.json": {
+   "rows": null,
+   "sha256": "f3899b71b83a62be722121963feab003437f67274ea51d8e22a54a755a092a8f",
+   "bytes": 18445
+  },
+  "validation_summary.md": {
+   "rows": null,
+   "sha256": "ae56bdb54d72db148e3586c2b12dd0b21493306101eb6656a056eb686237bf02",
+   "bytes": 8301
+  }
+ }
+}

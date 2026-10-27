@@ -1,0 +1,580 @@
+stage_history_id,opportunity_id,seq,from_stage,to_stage,changed_at,transition_reason
+STG-OPP-2026-000001-01,OPP-2026-000001,1,,Qualification,2026-01-27T07:55:03,opportunity_created
+STG-OPP-2026-000001-02,OPP-2026-000001,2,Qualification,Discovery,2026-02-02T02:53:33,stage_advanced
+STG-OPP-2026-000001-03,OPP-2026-000001,3,Discovery,Proposal,2026-02-15T00:04:20,stage_advanced
+STG-OPP-2026-000001-04,OPP-2026-000001,4,Proposal,Closed Lost,2026-02-22T15:27:36,lost:competitor
+STG-OPP-2026-000002-01,OPP-2026-000002,1,,Qualification,2026-01-30T06:38:46,opportunity_created
+STG-OPP-2026-000002-02,OPP-2026-000002,2,Qualification,Discovery,2026-02-02T05:21:11,stage_advanced
+STG-OPP-2026-000002-03,OPP-2026-000002,3,Discovery,Proposal,2026-02-13T12:12:42,stage_advanced
+STG-OPP-2026-000002-04,OPP-2026-000002,4,Proposal,Negotiation,2026-02-23T18:23:53,stage_advanced
+STG-OPP-2026-000002-05,OPP-2026-000002,5,Negotiation,Closed Won,2026-03-10T11:23:36,won:product_fit
+STG-OPP-2026-000003-01,OPP-2026-000003,1,,Qualification,2026-01-30T17:14:49,opportunity_created
+STG-OPP-2026-000003-02,OPP-2026-000003,2,Qualification,Discovery,2026-02-02T15:57:51,stage_advanced
+STG-OPP-2026-000003-03,OPP-2026-000003,3,Discovery,Closed Lost,2026-02-15T14:47:39,lost:timing
+STG-OPP-2026-000004-01,OPP-2026-000004,1,,Qualification,2026-01-31T12:31:14,opportunity_created
+STG-OPP-2026-000004-02,OPP-2026-000004,2,Qualification,Discovery,2026-02-02T23:58:16,stage_advanced
+STG-OPP-2026-000004-03,OPP-2026-000004,3,Discovery,Proposal,2026-02-16T20:58:17,stage_advanced
+STG-OPP-2026-000004-04,OPP-2026-000004,4,Proposal,Negotiation,2026-03-06T16:38:35,stage_advanced
+STG-OPP-2026-000004-05,OPP-2026-000004,5,Negotiation,Closed Won,2026-03-14T06:03:19,won:product_fit
+STG-OPP-2026-000005-01,OPP-2026-000005,1,,Qualification,2026-02-02T12:27:06,opportunity_created
+STG-OPP-2026-000005-02,OPP-2026-000005,2,Qualification,Discovery,2026-02-08T22:29:53,stage_advanced
+STG-OPP-2026-000005-03,OPP-2026-000005,3,Discovery,Proposal,2026-02-20T11:11:58,stage_advanced
+STG-OPP-2026-000005-04,OPP-2026-000005,4,Proposal,Closed Lost,2026-03-10T08:17:59,lost:price
+STG-OPP-2026-000006-01,OPP-2026-000006,1,,Qualification,2026-02-04T00:53:28,opportunity_created
+STG-OPP-2026-000006-02,OPP-2026-000006,2,Qualification,Closed Lost,2026-02-07T18:19:31,lost:timing
+STG-OPP-2026-000007-01,OPP-2026-000007,1,,Qualification,2026-02-05T03:54:31,opportunity_created
+STG-OPP-2026-000007-02,OPP-2026-000007,2,Qualification,Closed Lost,2026-02-10T07:01:19,lost:timing
+STG-OPP-2026-000008-01,OPP-2026-000008,1,,Qualification,2026-02-05T08:14:00,opportunity_created
+STG-OPP-2026-000008-02,OPP-2026-000008,2,Qualification,Discovery,2026-02-14T02:23:24,stage_advanced
+STG-OPP-2026-000008-03,OPP-2026-000008,3,Discovery,Closed Lost,2026-02-22T23:23:52,lost:timing
+STG-OPP-2026-000009-01,OPP-2026-000009,1,,Qualification,2026-02-06T22:10:13,opportunity_created
+STG-OPP-2026-000009-02,OPP-2026-000009,2,Qualification,Discovery,2026-02-09T06:41:59,stage_advanced
+STG-OPP-2026-000009-03,OPP-2026-000009,3,Discovery,Closed Lost,2026-02-13T15:02:37,lost:timing
+STG-OPP-2026-000010-01,OPP-2026-000010,1,,Qualification,2026-02-11T13:32:24,opportunity_created
+STG-OPP-2026-000010-02,OPP-2026-000010,2,Qualification,Discovery,2026-02-16T18:29:48,stage_advanced
+STG-OPP-2026-000010-03,OPP-2026-000010,3,Discovery,Proposal,2026-02-27T12:30:06,stage_advanced
+STG-OPP-2026-000010-04,OPP-2026-000010,4,Proposal,Negotiation,2026-03-16T19:18:27,stage_advanced
+STG-OPP-2026-000010-05,OPP-2026-000010,5,Negotiation,Closed Won,2026-03-31T06:34:31,won:features
+STG-OPP-2026-000011-01,OPP-2026-000011,1,,Qualification,2026-02-14T21:55:23,opportunity_created
+STG-OPP-2026-000011-02,OPP-2026-000011,2,Qualification,Discovery,2026-02-20T09:40:27,stage_advanced
+STG-OPP-2026-000011-03,OPP-2026-000011,3,Discovery,Proposal,2026-02-26T14:03:46,stage_advanced
+STG-OPP-2026-000011-04,OPP-2026-000011,4,Proposal,Closed Lost,2026-03-04T19:50:42,lost:price
+STG-OPP-2026-000012-01,OPP-2026-000012,1,,Qualification,2026-02-15T01:37:49,opportunity_created
+STG-OPP-2026-000012-02,OPP-2026-000012,2,Qualification,Discovery,2026-02-18T22:35:23,stage_advanced
+STG-OPP-2026-000012-03,OPP-2026-000012,3,Discovery,Proposal,2026-02-25T23:02:10,stage_advanced
+STG-OPP-2026-000012-04,OPP-2026-000012,4,Proposal,Closed Lost,2026-03-04T07:16:24,lost:price
+STG-OPP-2026-000013-01,OPP-2026-000013,1,,Qualification,2026-02-15T05:02:06,opportunity_created
+STG-OPP-2026-000013-02,OPP-2026-000013,2,Qualification,Discovery,2026-02-23T23:12:24,stage_advanced
+STG-OPP-2026-000013-03,OPP-2026-000013,3,Discovery,Proposal,2026-03-03T09:39:54,stage_advanced
+STG-OPP-2026-000013-04,OPP-2026-000013,4,Proposal,Negotiation,2026-03-13T14:47:40,stage_advanced
+STG-OPP-2026-000013-05,OPP-2026-000013,5,Negotiation,Closed Won,2026-03-19T12:16:26,won:product_fit
+STG-OPP-2026-000014-01,OPP-2026-000014,1,,Qualification,2026-02-17T20:23:47,opportunity_created
+STG-OPP-2026-000014-02,OPP-2026-000014,2,Qualification,Discovery,2026-02-24T23:00:59,stage_advanced
+STG-OPP-2026-000014-03,OPP-2026-000014,3,Discovery,Proposal,2026-03-10T17:54:51,stage_advanced
+STG-OPP-2026-000014-04,OPP-2026-000014,4,Proposal,Negotiation,2026-03-16T20:43:39,stage_advanced
+STG-OPP-2026-000014-05,OPP-2026-000014,5,Negotiation,Closed Won,2026-03-26T01:28:14,won:relationship
+STG-OPP-2026-000015-01,OPP-2026-000015,1,,Qualification,2026-02-19T05:27:53,opportunity_created
+STG-OPP-2026-000015-02,OPP-2026-000015,2,Qualification,Discovery,2026-02-23T22:27:51,stage_advanced
+STG-OPP-2026-000015-03,OPP-2026-000015,3,Discovery,Proposal,2026-03-08T16:56:05,stage_advanced
+STG-OPP-2026-000015-04,OPP-2026-000015,4,Proposal,Negotiation,2026-03-21T22:20:14,stage_advanced
+STG-OPP-2026-000015-05,OPP-2026-000015,5,Negotiation,Closed Won,2026-04-09T13:20:14,won:product_fit
+STG-OPP-2026-000016-01,OPP-2026-000016,1,,Qualification,2026-02-25T21:58:54,opportunity_created
+STG-OPP-2026-000016-02,OPP-2026-000016,2,Qualification,Discovery,2026-03-02T05:27:12,stage_advanced
+STG-OPP-2026-000016-03,OPP-2026-000016,3,Discovery,Proposal,2026-03-06T22:25:19,stage_advanced
+STG-OPP-2026-000016-04,OPP-2026-000016,4,Proposal,Negotiation,2026-03-23T23:56:58,stage_advanced
+STG-OPP-2026-000016-05,OPP-2026-000016,5,Negotiation,Closed Won,2026-04-06T07:56:09,won:features
+STG-OPP-2026-000017-01,OPP-2026-000017,1,,Qualification,2026-03-01T10:51:26,opportunity_created
+STG-OPP-2026-000017-02,OPP-2026-000017,2,Qualification,Discovery,2026-03-09T06:29:43,stage_advanced
+STG-OPP-2026-000017-03,OPP-2026-000017,3,Discovery,Proposal,2026-03-18T06:08:42,stage_advanced
+STG-OPP-2026-000017-04,OPP-2026-000017,4,Proposal,Negotiation,2026-03-26T05:46:27,stage_advanced
+STG-OPP-2026-000017-05,OPP-2026-000017,5,Negotiation,Closed Won,2026-04-10T16:30:46,won:relationship
+STG-OPP-2026-000018-01,OPP-2026-000018,1,,Qualification,2026-03-02T03:08:25,opportunity_created
+STG-OPP-2026-000018-02,OPP-2026-000018,2,Qualification,Discovery,2026-03-05T00:13:52,stage_advanced
+STG-OPP-2026-000018-03,OPP-2026-000018,3,Discovery,Proposal,2026-03-16T00:07:40,stage_advanced
+STG-OPP-2026-000018-04,OPP-2026-000018,4,Proposal,Closed Lost,2026-04-01T07:30:09,lost:price
+STG-OPP-2026-000019-01,OPP-2026-000019,1,,Qualification,2026-03-02T08:21:04,opportunity_created
+STG-OPP-2026-000019-02,OPP-2026-000019,2,Qualification,Discovery,2026-03-06T08:42:09,stage_advanced
+STG-OPP-2026-000019-03,OPP-2026-000019,3,Discovery,Proposal,2026-03-11T13:59:55,stage_advanced
+STG-OPP-2026-000019-04,OPP-2026-000019,4,Proposal,Negotiation,2026-03-27T06:37:29,stage_advanced
+STG-OPP-2026-000019-05,OPP-2026-000019,5,Negotiation,Closed Won,2026-04-14T06:21:17,won:product_fit
+STG-OPP-2026-000020-01,OPP-2026-000020,1,,Qualification,2026-03-04T08:34:40,opportunity_created
+STG-OPP-2026-000020-02,OPP-2026-000020,2,Qualification,Discovery,2026-03-08T06:37:20,stage_advanced
+STG-OPP-2026-000020-03,OPP-2026-000020,3,Discovery,Proposal,2026-03-12T23:45:40,stage_advanced
+STG-OPP-2026-000020-04,OPP-2026-000020,4,Proposal,Negotiation,2026-03-29T12:49:42,stage_advanced
+STG-OPP-2026-000020-05,OPP-2026-000020,5,Negotiation,Closed Won,2026-04-17T20:20:59,won:relationship
+STG-OPP-2026-000021-01,OPP-2026-000021,1,,Qualification,2026-03-06T21:00:54,opportunity_created
+STG-OPP-2026-000021-02,OPP-2026-000021,2,Qualification,Closed Lost,2026-03-11T16:47:56,lost:timing
+STG-OPP-2026-000022-01,OPP-2026-000022,1,,Qualification,2026-03-06T21:36:41,opportunity_created
+STG-OPP-2026-000022-02,OPP-2026-000022,2,Qualification,Discovery,2026-03-13T03:24:09,stage_advanced
+STG-OPP-2026-000022-03,OPP-2026-000022,3,Discovery,Closed Lost,2026-03-24T16:53:46,lost:timing
+STG-OPP-2026-000023-01,OPP-2026-000023,1,,Qualification,2026-03-07T05:02:12,opportunity_created
+STG-OPP-2026-000023-02,OPP-2026-000023,2,Qualification,Discovery,2026-03-10T02:48:15,stage_advanced
+STG-OPP-2026-000023-03,OPP-2026-000023,3,Discovery,Proposal,2026-03-20T12:09:20,stage_advanced
+STG-OPP-2026-000023-04,OPP-2026-000023,4,Proposal,Closed Lost,2026-04-03T18:53:56,lost:price
+STG-OPP-2026-000024-01,OPP-2026-000024,1,,Qualification,2026-03-10T02:12:40,opportunity_created
+STG-OPP-2026-000024-02,OPP-2026-000024,2,Qualification,Discovery,2026-03-13T23:40:24,stage_advanced
+STG-OPP-2026-000024-03,OPP-2026-000024,3,Discovery,Proposal,2026-03-18T11:01:30,stage_advanced
+STG-OPP-2026-000024-04,OPP-2026-000024,4,Proposal,Negotiation,2026-03-27T11:08:31,stage_advanced
+STG-OPP-2026-000024-05,OPP-2026-000024,5,Negotiation,Closed Won,2026-04-09T13:58:37,won:features
+STG-OPP-2026-000025-01,OPP-2026-000025,1,,Qualification,2026-03-12T10:01:00,opportunity_created
+STG-OPP-2026-000025-02,OPP-2026-000025,2,Qualification,Discovery,2026-03-15T07:14:35,stage_advanced
+STG-OPP-2026-000025-03,OPP-2026-000025,3,Discovery,Proposal,2026-03-25T05:55:23,stage_advanced
+STG-OPP-2026-000025-04,OPP-2026-000025,4,Proposal,Closed Lost,2026-04-08T00:49:58,lost:price
+STG-OPP-2026-000026-01,OPP-2026-000026,1,,Qualification,2026-03-12T22:17:41,opportunity_created
+STG-OPP-2026-000026-02,OPP-2026-000026,2,Qualification,Discovery,2026-03-21T21:31:17,stage_advanced
+STG-OPP-2026-000026-03,OPP-2026-000026,3,Discovery,Proposal,2026-03-25T22:49:35,stage_advanced
+STG-OPP-2026-000026-04,OPP-2026-000026,4,Proposal,Negotiation,2026-03-31T02:48:57,stage_advanced
+STG-OPP-2026-000026-05,OPP-2026-000026,5,Negotiation,Closed Won,2026-04-08T06:57:25,won:price
+STG-OPP-2026-000027-01,OPP-2026-000027,1,,Qualification,2026-03-14T15:51:18,opportunity_created
+STG-OPP-2026-000027-02,OPP-2026-000027,2,Qualification,Discovery,2026-03-23T03:11:55,stage_advanced
+STG-OPP-2026-000027-03,OPP-2026-000027,3,Discovery,Proposal,2026-04-03T14:43:17,stage_advanced
+STG-OPP-2026-000027-04,OPP-2026-000027,4,Proposal,Negotiation,2026-04-19T09:45:01,stage_advanced
+STG-OPP-2026-000027-05,OPP-2026-000027,5,Negotiation,Closed Won,2026-05-02T09:00:52,won:product_fit
+STG-OPP-2026-000028-01,OPP-2026-000028,1,,Qualification,2026-03-14T16:30:36,opportunity_created
+STG-OPP-2026-000028-02,OPP-2026-000028,2,Qualification,Closed Lost,2026-03-19T08:04:42,lost:timing
+STG-OPP-2026-000029-01,OPP-2026-000029,1,,Qualification,2026-03-15T12:08:16,opportunity_created
+STG-OPP-2026-000029-02,OPP-2026-000029,2,Qualification,Discovery,2026-03-24T05:51:40,stage_advanced
+STG-OPP-2026-000029-03,OPP-2026-000029,3,Discovery,Proposal,2026-04-05T15:47:20,stage_advanced
+STG-OPP-2026-000029-04,OPP-2026-000029,4,Proposal,Negotiation,2026-04-22T04:07:00,stage_advanced
+STG-OPP-2026-000029-05,OPP-2026-000029,5,Negotiation,Closed Won,2026-04-30T15:49:22,won:price
+STG-OPP-2026-000030-01,OPP-2026-000030,1,,Qualification,2026-03-21T16:54:58,opportunity_created
+STG-OPP-2026-000030-02,OPP-2026-000030,2,Qualification,Discovery,2026-03-29T07:16:19,stage_advanced
+STG-OPP-2026-000030-03,OPP-2026-000030,3,Discovery,Proposal,2026-04-07T04:49:29,stage_advanced
+STG-OPP-2026-000030-04,OPP-2026-000030,4,Proposal,Negotiation,2026-04-12T19:56:24,stage_advanced
+STG-OPP-2026-000030-05,OPP-2026-000030,5,Negotiation,Closed Won,2026-04-30T20:16:25,won:product_fit
+STG-OPP-2026-000031-01,OPP-2026-000031,1,,Qualification,2026-03-22T22:19:03,opportunity_created
+STG-OPP-2026-000031-02,OPP-2026-000031,2,Qualification,Discovery,2026-03-28T03:05:57,stage_advanced
+STG-OPP-2026-000031-03,OPP-2026-000031,3,Discovery,Proposal,2026-04-06T12:45:12,stage_advanced
+STG-OPP-2026-000031-04,OPP-2026-000031,4,Proposal,Negotiation,2026-04-13T08:25:24,stage_advanced
+STG-OPP-2026-000031-05,OPP-2026-000031,5,Negotiation,Closed Won,2026-04-19T10:47:32,won:product_fit
+STG-OPP-2026-000032-01,OPP-2026-000032,1,,Qualification,2026-03-23T13:14:37,opportunity_created
+STG-OPP-2026-000032-02,OPP-2026-000032,2,Qualification,Discovery,2026-03-28T01:58:36,stage_advanced
+STG-OPP-2026-000032-03,OPP-2026-000032,3,Discovery,Closed Lost,2026-04-08T12:40:28,lost:timing
+STG-OPP-2026-000033-01,OPP-2026-000033,1,,Qualification,2026-03-23T22:54:42,opportunity_created
+STG-OPP-2026-000033-02,OPP-2026-000033,2,Qualification,Discovery,2026-03-31T00:40:37,stage_advanced
+STG-OPP-2026-000033-03,OPP-2026-000033,3,Discovery,Closed Lost,2026-04-05T04:11:05,lost:timing
+STG-OPP-2026-000034-01,OPP-2026-000034,1,,Qualification,2026-03-25T08:09:21,opportunity_created
+STG-OPP-2026-000034-02,OPP-2026-000034,2,Qualification,Discovery,2026-03-30T05:27:56,stage_advanced
+STG-OPP-2026-000034-03,OPP-2026-000034,3,Discovery,Proposal,2026-04-11T07:59:54,stage_advanced
+STG-OPP-2026-000034-04,OPP-2026-000034,4,Proposal,Negotiation,2026-04-26T02:26:47,stage_advanced
+STG-OPP-2026-000034-05,OPP-2026-000034,5,Negotiation,Closed Won,2026-05-13T12:31:07,won:product_fit
+STG-OPP-2026-000035-01,OPP-2026-000035,1,,Qualification,2026-03-25T12:17:23,opportunity_created
+STG-OPP-2026-000035-02,OPP-2026-000035,2,Qualification,Discovery,2026-04-02T11:15:47,stage_advanced
+STG-OPP-2026-000035-03,OPP-2026-000035,3,Discovery,Proposal,2026-04-09T05:13:08,stage_advanced
+STG-OPP-2026-000035-04,OPP-2026-000035,4,Proposal,Negotiation,2026-04-21T11:40:16,stage_advanced
+STG-OPP-2026-000035-05,OPP-2026-000035,5,Negotiation,Closed Lost,2026-04-27T07:24:18,lost:price
+STG-OPP-2026-000036-01,OPP-2026-000036,1,,Qualification,2026-03-27T02:53:29,opportunity_created
+STG-OPP-2026-000036-02,OPP-2026-000036,2,Qualification,Discovery,2026-04-02T17:07:53,stage_advanced
+STG-OPP-2026-000036-03,OPP-2026-000036,3,Discovery,Proposal,2026-04-08T10:34:06,stage_advanced
+STG-OPP-2026-000036-04,OPP-2026-000036,4,Proposal,Closed Lost,2026-04-23T17:03:09,lost:price
+STG-OPP-2026-000037-01,OPP-2026-000037,1,,Qualification,2026-03-27T13:18:06,opportunity_created
+STG-OPP-2026-000037-02,OPP-2026-000037,2,Qualification,Discovery,2026-04-03T14:17:48,stage_advanced
+STG-OPP-2026-000037-03,OPP-2026-000037,3,Discovery,Closed Lost,2026-04-17T11:03:58,lost:timing
+STG-OPP-2026-000038-01,OPP-2026-000038,1,,Qualification,2026-03-28T14:52:59,opportunity_created
+STG-OPP-2026-000038-02,OPP-2026-000038,2,Qualification,Closed Lost,2026-04-05T00:21:18,lost:not_a_fit
+STG-OPP-2026-000039-01,OPP-2026-000039,1,,Qualification,2026-03-29T17:27:33,opportunity_created
+STG-OPP-2026-000039-02,OPP-2026-000039,2,Qualification,Discovery,2026-04-04T16:22:33,stage_advanced
+STG-OPP-2026-000039-03,OPP-2026-000039,3,Discovery,Proposal,2026-04-15T11:07:25,stage_advanced
+STG-OPP-2026-000039-04,OPP-2026-000039,4,Proposal,Negotiation,2026-04-28T05:53:11,stage_advanced
+STG-OPP-2026-000039-05,OPP-2026-000039,5,Negotiation,Closed Won,2026-05-09T01:26:00,won:price
+STG-OPP-2026-000040-01,OPP-2026-000040,1,,Qualification,2026-03-31T16:53:09,opportunity_created
+STG-OPP-2026-000040-02,OPP-2026-000040,2,Qualification,Discovery,2026-04-09T01:51:13,stage_advanced
+STG-OPP-2026-000040-03,OPP-2026-000040,3,Discovery,Proposal,2026-04-21T02:43:21,stage_advanced
+STG-OPP-2026-000040-04,OPP-2026-000040,4,Proposal,Closed Lost,2026-04-29T13:57:01,lost:price
+STG-OPP-2026-000041-01,OPP-2026-000041,1,,Qualification,2026-04-01T09:38:35,opportunity_created
+STG-OPP-2026-000041-02,OPP-2026-000041,2,Qualification,Closed Lost,2026-04-09T22:20:41,lost:timing
+STG-OPP-2026-000042-01,OPP-2026-000042,1,,Qualification,2026-04-04T15:19:03,opportunity_created
+STG-OPP-2026-000042-02,OPP-2026-000042,2,Qualification,Closed Lost,2026-04-13T09:39:32,lost:timing
+STG-OPP-2026-000043-01,OPP-2026-000043,1,,Qualification,2026-04-04T15:47:27,opportunity_created
+STG-OPP-2026-000043-02,OPP-2026-000043,2,Qualification,Discovery,2026-04-10T06:50:12,stage_advanced
+STG-OPP-2026-000043-03,OPP-2026-000043,3,Discovery,Closed Lost,2026-04-14T15:28:08,lost:budget
+STG-OPP-2026-000044-01,OPP-2026-000044,1,,Qualification,2026-04-04T16:35:50,opportunity_created
+STG-OPP-2026-000044-02,OPP-2026-000044,2,Qualification,Discovery,2026-04-07T09:31:07,stage_advanced
+STG-OPP-2026-000044-03,OPP-2026-000044,3,Discovery,Proposal,2026-04-17T13:30:05,stage_advanced
+STG-OPP-2026-000044-04,OPP-2026-000044,4,Proposal,Negotiation,2026-04-23T20:27:29,stage_advanced
+STG-OPP-2026-000044-05,OPP-2026-000044,5,Negotiation,Closed Lost,2026-05-03T22:24:12,lost:price
+STG-OPP-2026-000045-01,OPP-2026-000045,1,,Qualification,2026-04-05T13:43:52,opportunity_created
+STG-OPP-2026-000045-02,OPP-2026-000045,2,Qualification,Discovery,2026-04-14T06:15:45,stage_advanced
+STG-OPP-2026-000045-03,OPP-2026-000045,3,Discovery,Proposal,2026-04-26T04:43:04,stage_advanced
+STG-OPP-2026-000045-04,OPP-2026-000045,4,Proposal,Negotiation,2026-05-08T01:55:49,stage_advanced
+STG-OPP-2026-000045-05,OPP-2026-000045,5,Negotiation,Closed Won,2026-05-23T17:03:02,won:relationship
+STG-OPP-2026-000046-01,OPP-2026-000046,1,,Qualification,2026-04-06T04:55:18,opportunity_created
+STG-OPP-2026-000046-02,OPP-2026-000046,2,Qualification,Closed Lost,2026-04-11T18:38:55,lost:timing
+STG-OPP-2026-000047-01,OPP-2026-000047,1,,Qualification,2026-04-07T15:53:56,opportunity_created
+STG-OPP-2026-000047-02,OPP-2026-000047,2,Qualification,Discovery,2026-04-16T00:44:40,stage_advanced
+STG-OPP-2026-000047-03,OPP-2026-000047,3,Discovery,Proposal,2026-04-29T14:01:30,stage_advanced
+STG-OPP-2026-000047-04,OPP-2026-000047,4,Proposal,Negotiation,2026-05-16T20:24:18,stage_advanced
+STG-OPP-2026-000047-05,OPP-2026-000047,5,Negotiation,Closed Won,2026-05-31T13:48:22,won:product_fit
+STG-OPP-2026-000048-01,OPP-2026-000048,1,,Qualification,2026-04-09T02:11:00,opportunity_created
+STG-OPP-2026-000048-02,OPP-2026-000048,2,Qualification,Discovery,2026-04-11T07:40:21,stage_advanced
+STG-OPP-2026-000048-03,OPP-2026-000048,3,Discovery,Proposal,2026-04-24T05:28:18,stage_advanced
+STG-OPP-2026-000048-04,OPP-2026-000048,4,Proposal,Negotiation,2026-04-29T16:56:18,stage_advanced
+STG-OPP-2026-000048-05,OPP-2026-000048,5,Negotiation,Closed Won,2026-05-13T20:57:58,won:product_fit
+STG-OPP-2026-000049-01,OPP-2026-000049,1,,Qualification,2026-04-11T13:18:04,opportunity_created
+STG-OPP-2026-000049-02,OPP-2026-000049,2,Qualification,Discovery,2026-04-19T12:37:04,stage_advanced
+STG-OPP-2026-000049-03,OPP-2026-000049,3,Discovery,Proposal,2026-05-02T18:39:41,stage_advanced
+STG-OPP-2026-000049-04,OPP-2026-000049,4,Proposal,Negotiation,2026-05-19T12:52:43,stage_advanced
+STG-OPP-2026-000049-05,OPP-2026-000049,5,Negotiation,Closed Won,2026-06-01T11:19:21,won:features
+STG-OPP-2026-000050-01,OPP-2026-000050,1,,Qualification,2026-04-14T03:59:42,opportunity_created
+STG-OPP-2026-000050-02,OPP-2026-000050,2,Qualification,Discovery,2026-04-22T06:39:46,stage_advanced
+STG-OPP-2026-000050-03,OPP-2026-000050,3,Discovery,Closed Lost,2026-05-01T05:46:24,lost:timing
+STG-OPP-2026-000051-01,OPP-2026-000051,1,,Qualification,2026-04-15T19:53:49,opportunity_created
+STG-OPP-2026-000051-02,OPP-2026-000051,2,Qualification,Discovery,2026-04-19T02:51:41,stage_advanced
+STG-OPP-2026-000051-03,OPP-2026-000051,3,Discovery,Closed Lost,2026-04-23T05:46:52,lost:timing
+STG-OPP-2026-000052-01,OPP-2026-000052,1,,Qualification,2026-04-15T22:08:53,opportunity_created
+STG-OPP-2026-000052-02,OPP-2026-000052,2,Qualification,Discovery,2026-04-19T11:22:06,stage_advanced
+STG-OPP-2026-000052-03,OPP-2026-000052,3,Discovery,Closed Lost,2026-05-01T00:23:13,lost:timing
+STG-OPP-2026-000053-01,OPP-2026-000053,1,,Qualification,2026-04-19T05:29:46,opportunity_created
+STG-OPP-2026-000053-02,OPP-2026-000053,2,Qualification,Discovery,2026-04-26T07:16:02,stage_advanced
+STG-OPP-2026-000053-03,OPP-2026-000053,3,Discovery,Proposal,2026-05-02T22:46:30,stage_advanced
+STG-OPP-2026-000053-04,OPP-2026-000053,4,Proposal,Negotiation,2026-05-15T18:44:02,stage_advanced
+STG-OPP-2026-000053-05,OPP-2026-000053,5,Negotiation,Closed Lost,2026-05-25T10:48:58,lost:price
+STG-OPP-2026-000054-01,OPP-2026-000054,1,,Qualification,2026-04-20T15:14:44,opportunity_created
+STG-OPP-2026-000054-02,OPP-2026-000054,2,Qualification,Discovery,2026-04-22T20:17:21,stage_advanced
+STG-OPP-2026-000054-03,OPP-2026-000054,3,Discovery,Proposal,2026-05-05T11:58:30,stage_advanced
+STG-OPP-2026-000054-04,OPP-2026-000054,4,Proposal,Negotiation,2026-05-20T03:44:24,stage_advanced
+STG-OPP-2026-000054-05,OPP-2026-000054,5,Negotiation,Closed Won,2026-05-26T17:45:01,won:features
+STG-OPP-2026-000055-01,OPP-2026-000055,1,,Qualification,2026-04-22T08:18:57,opportunity_created
+STG-OPP-2026-000055-02,OPP-2026-000055,2,Qualification,Discovery,2026-04-25T08:13:19,stage_advanced
+STG-OPP-2026-000055-03,OPP-2026-000055,3,Discovery,Proposal,2026-05-09T03:45:49,stage_advanced
+STG-OPP-2026-000055-04,OPP-2026-000055,4,Proposal,Negotiation,2026-05-14T14:55:04,stage_advanced
+STG-OPP-2026-000055-05,OPP-2026-000055,5,Negotiation,Closed Won,2026-06-03T13:35:04,won:product_fit
+STG-OPP-2026-000056-01,OPP-2026-000056,1,,Qualification,2026-04-26T00:32:25,opportunity_created
+STG-OPP-2026-000056-02,OPP-2026-000056,2,Qualification,Discovery,2026-05-02T15:34:22,stage_advanced
+STG-OPP-2026-000056-03,OPP-2026-000056,3,Discovery,Proposal,2026-05-10T09:58:40,stage_advanced
+STG-OPP-2026-000056-04,OPP-2026-000056,4,Proposal,Negotiation,2026-05-20T13:48:37,stage_advanced
+STG-OPP-2026-000056-05,OPP-2026-000056,5,Negotiation,Closed Won,2026-05-29T14:04:34,won:product_fit
+STG-OPP-2026-000057-01,OPP-2026-000057,1,,Qualification,2026-04-26T03:05:23,opportunity_created
+STG-OPP-2026-000057-02,OPP-2026-000057,2,Qualification,Discovery,2026-04-29T04:57:01,stage_advanced
+STG-OPP-2026-000057-03,OPP-2026-000057,3,Discovery,Closed Lost,2026-05-08T06:34:19,lost:competitor
+STG-OPP-2026-000058-01,OPP-2026-000058,1,,Qualification,2026-04-26T22:05:05,opportunity_created
+STG-OPP-2026-000058-02,OPP-2026-000058,2,Qualification,Discovery,2026-05-04T12:58:17,stage_advanced
+STG-OPP-2026-000058-03,OPP-2026-000058,3,Discovery,Proposal,2026-05-13T13:35:18,stage_advanced
+STG-OPP-2026-000058-04,OPP-2026-000058,4,Proposal,Closed Lost,2026-05-22T10:41:01,lost:price
+STG-OPP-2026-000059-01,OPP-2026-000059,1,,Qualification,2026-04-27T20:54:58,opportunity_created
+STG-OPP-2026-000059-02,OPP-2026-000059,2,Qualification,Discovery,2026-05-06T08:35:48,stage_advanced
+STG-OPP-2026-000059-03,OPP-2026-000059,3,Discovery,Proposal,2026-05-16T18:48:35,stage_advanced
+STG-OPP-2026-000059-04,OPP-2026-000059,4,Proposal,Closed Lost,2026-05-26T21:36:46,lost:price
+STG-OPP-2026-000060-01,OPP-2026-000060,1,,Qualification,2026-05-01T00:48:32,opportunity_created
+STG-OPP-2026-000060-02,OPP-2026-000060,2,Qualification,Discovery,2026-05-04T05:28:40,stage_advanced
+STG-OPP-2026-000060-03,OPP-2026-000060,3,Discovery,Closed Lost,2026-05-10T21:17:08,lost:timing
+STG-OPP-2026-000061-01,OPP-2026-000061,1,,Qualification,2026-05-01T08:04:55,opportunity_created
+STG-OPP-2026-000061-02,OPP-2026-000061,2,Qualification,Discovery,2026-05-07T03:19:03,stage_advanced
+STG-OPP-2026-000061-03,OPP-2026-000061,3,Discovery,Proposal,2026-05-20T06:09:18,stage_advanced
+STG-OPP-2026-000061-04,OPP-2026-000061,4,Proposal,Negotiation,2026-06-02T08:17:23,stage_advanced
+STG-OPP-2026-000061-05,OPP-2026-000061,5,Negotiation,Closed Lost,2026-06-14T12:18:05,lost:price
+STG-OPP-2026-000062-01,OPP-2026-000062,1,,Qualification,2026-05-01T19:30:22,opportunity_created
+STG-OPP-2026-000062-02,OPP-2026-000062,2,Qualification,Discovery,2026-05-09T20:08:08,stage_advanced
+STG-OPP-2026-000062-03,OPP-2026-000062,3,Discovery,Closed Lost,2026-05-18T06:22:00,lost:timing
+STG-OPP-2026-000063-01,OPP-2026-000063,1,,Qualification,2026-05-05T03:37:49,opportunity_created
+STG-OPP-2026-000063-02,OPP-2026-000063,2,Qualification,Discovery,2026-05-12T13:56:31,stage_advanced
+STG-OPP-2026-000063-03,OPP-2026-000063,3,Discovery,Proposal,2026-05-21T20:51:57,stage_advanced
+STG-OPP-2026-000063-04,OPP-2026-000063,4,Proposal,Closed Lost,2026-05-31T21:34:10,lost:price
+STG-OPP-2026-000064-01,OPP-2026-000064,1,,Qualification,2026-05-05T19:31:43,opportunity_created
+STG-OPP-2026-000064-02,OPP-2026-000064,2,Qualification,Discovery,2026-05-08T00:33:51,stage_advanced
+STG-OPP-2026-000064-03,OPP-2026-000064,3,Discovery,Proposal,2026-05-12T18:40:07,stage_advanced
+STG-OPP-2026-000064-04,OPP-2026-000064,4,Proposal,Negotiation,2026-05-26T10:08:46,stage_advanced
+STG-OPP-2026-000064-05,OPP-2026-000064,5,Negotiation,Closed Won,2026-06-04T04:15:03,won:relationship
+STG-OPP-2026-000065-01,OPP-2026-000065,1,,Qualification,2026-05-09T17:27:16,opportunity_created
+STG-OPP-2026-000065-02,OPP-2026-000065,2,Qualification,Discovery,2026-05-12T06:09:20,stage_advanced
+STG-OPP-2026-000065-03,OPP-2026-000065,3,Discovery,Proposal,2026-05-22T15:46:41,stage_advanced
+STG-OPP-2026-000065-04,OPP-2026-000065,4,Proposal,Closed Lost,2026-06-03T22:14:33,lost:competitor
+STG-OPP-2026-000066-01,OPP-2026-000066,1,,Qualification,2026-05-10T02:22:05,opportunity_created
+STG-OPP-2026-000066-02,OPP-2026-000066,2,Qualification,Closed Lost,2026-05-15T11:32:40,lost:not_a_fit
+STG-OPP-2026-000067-01,OPP-2026-000067,1,,Qualification,2026-05-10T20:40:01,opportunity_created
+STG-OPP-2026-000067-02,OPP-2026-000067,2,Qualification,Discovery,2026-05-17T16:44:08,stage_advanced
+STG-OPP-2026-000067-03,OPP-2026-000067,3,Discovery,Proposal,2026-05-22T14:57:47,stage_advanced
+STG-OPP-2026-000067-04,OPP-2026-000067,4,Proposal,Negotiation,2026-06-05T13:10:07,stage_advanced
+STG-OPP-2026-000067-05,OPP-2026-000067,5,Negotiation,Closed Lost,2026-06-20T19:10:11,lost:price
+STG-OPP-2026-000068-01,OPP-2026-000068,1,,Qualification,2026-05-15T06:57:18,opportunity_created
+STG-OPP-2026-000068-02,OPP-2026-000068,2,Qualification,Discovery,2026-05-20T01:10:17,stage_advanced
+STG-OPP-2026-000068-03,OPP-2026-000068,3,Discovery,Closed Lost,2026-05-24T02:37:49,lost:timing
+STG-OPP-2026-000069-01,OPP-2026-000069,1,,Qualification,2026-05-15T23:50:45,opportunity_created
+STG-OPP-2026-000069-02,OPP-2026-000069,2,Qualification,Discovery,2026-05-19T23:48:34,stage_advanced
+STG-OPP-2026-000069-03,OPP-2026-000069,3,Discovery,Proposal,2026-06-01T03:51:55,stage_advanced
+STG-OPP-2026-000069-04,OPP-2026-000069,4,Proposal,Closed Lost,2026-06-10T00:29:16,lost:price
+STG-OPP-2026-000070-01,OPP-2026-000070,1,,Qualification,2026-05-17T10:58:34,opportunity_created
+STG-OPP-2026-000070-02,OPP-2026-000070,2,Qualification,Discovery,2026-05-25T17:39:15,stage_advanced
+STG-OPP-2026-000070-03,OPP-2026-000070,3,Discovery,Closed Lost,2026-06-07T20:55:39,lost:timing
+STG-OPP-2026-000071-01,OPP-2026-000071,1,,Qualification,2026-05-18T20:05:19,opportunity_created
+STG-OPP-2026-000071-02,OPP-2026-000071,2,Qualification,Discovery,2026-05-24T14:08:00,stage_advanced
+STG-OPP-2026-000071-03,OPP-2026-000071,3,Discovery,Proposal,2026-06-04T08:15:14,stage_advanced
+STG-OPP-2026-000071-04,OPP-2026-000071,4,Proposal,Negotiation,2026-06-22T08:08:15,stage_advanced
+STG-OPP-2026-000071-05,OPP-2026-000071,5,Negotiation,Closed Won,2026-06-29T06:27:03,won:features
+STG-OPP-2026-000072-01,OPP-2026-000072,1,,Qualification,2026-05-19T11:22:26,opportunity_created
+STG-OPP-2026-000072-02,OPP-2026-000072,2,Qualification,Discovery,2026-05-22T13:21:10,stage_advanced
+STG-OPP-2026-000072-03,OPP-2026-000072,3,Discovery,Closed Lost,2026-06-05T07:22:32,lost:timing
+STG-OPP-2026-000073-01,OPP-2026-000073,1,,Qualification,2026-05-20T08:06:19,opportunity_created
+STG-OPP-2026-000073-02,OPP-2026-000073,2,Qualification,Discovery,2026-05-24T13:25:24,stage_advanced
+STG-OPP-2026-000073-03,OPP-2026-000073,3,Discovery,Closed Lost,2026-05-31T14:50:45,lost:timing
+STG-OPP-2026-000074-01,OPP-2026-000074,1,,Qualification,2026-05-21T21:35:31,opportunity_created
+STG-OPP-2026-000074-02,OPP-2026-000074,2,Qualification,Discovery,2026-05-29T05:37:15,stage_advanced
+STG-OPP-2026-000074-03,OPP-2026-000074,3,Discovery,Closed Lost,2026-06-08T10:41:07,lost:timing
+STG-OPP-2026-000075-01,OPP-2026-000075,1,,Qualification,2026-05-22T21:40:33,opportunity_created
+STG-OPP-2026-000075-02,OPP-2026-000075,2,Qualification,Closed Lost,2026-05-26T18:04:29,lost:not_a_fit
+STG-OPP-2026-000076-01,OPP-2026-000076,1,,Qualification,2026-05-23T17:42:00,opportunity_created
+STG-OPP-2026-000076-02,OPP-2026-000076,2,Qualification,Closed Lost,2026-05-26T21:47:44,lost:timing
+STG-OPP-2026-000077-01,OPP-2026-000077,1,,Qualification,2026-05-23T21:04:12,opportunity_created
+STG-OPP-2026-000077-02,OPP-2026-000077,2,Qualification,Closed Lost,2026-05-31T19:55:43,lost:timing
+STG-OPP-2026-000078-01,OPP-2026-000078,1,,Qualification,2026-05-25T13:55:30,opportunity_created
+STG-OPP-2026-000078-02,OPP-2026-000078,2,Qualification,Discovery,2026-05-30T10:27:29,stage_advanced
+STG-OPP-2026-000078-03,OPP-2026-000078,3,Discovery,Proposal,2026-06-07T12:14:01,stage_advanced
+STG-OPP-2026-000078-04,OPP-2026-000078,4,Proposal,Closed Lost,2026-06-17T13:14:25,lost:price
+STG-OPP-2026-000079-01,OPP-2026-000079,1,,Qualification,2026-05-27T08:39:52,opportunity_created
+STG-OPP-2026-000079-02,OPP-2026-000079,2,Qualification,Discovery,2026-06-02T15:10:18,stage_advanced
+STG-OPP-2026-000079-03,OPP-2026-000079,3,Discovery,Proposal,2026-06-11T05:23:01,stage_advanced
+STG-OPP-2026-000079-04,OPP-2026-000079,4,Proposal,Negotiation,2026-06-24T23:15:55,stage_advanced
+STG-OPP-2026-000079-05,OPP-2026-000079,5,Negotiation,Closed Won,2026-07-03T06:47:12,won:features
+STG-OPP-2026-000080-01,OPP-2026-000080,1,,Qualification,2026-05-30T05:23:55,opportunity_created
+STG-OPP-2026-000080-02,OPP-2026-000080,2,Qualification,Discovery,2026-06-06T15:38:10,stage_advanced
+STG-OPP-2026-000080-03,OPP-2026-000080,3,Discovery,Proposal,2026-06-11T16:41:08,stage_advanced
+STG-OPP-2026-000080-04,OPP-2026-000080,4,Proposal,Negotiation,2026-06-27T01:56:36,stage_advanced
+STG-OPP-2026-000080-05,OPP-2026-000080,5,Negotiation,Closed Won,2026-07-08T17:28:22,won:price
+STG-OPP-2026-000081-01,OPP-2026-000081,1,,Qualification,2026-05-30T18:32:35,opportunity_created
+STG-OPP-2026-000081-02,OPP-2026-000081,2,Qualification,Discovery,2026-06-03T04:01:49,stage_advanced
+STG-OPP-2026-000081-03,OPP-2026-000081,3,Discovery,Closed Lost,2026-06-15T15:08:31,lost:timing
+STG-OPP-2026-000082-01,OPP-2026-000082,1,,Qualification,2026-06-03T21:32:37,opportunity_created
+STG-OPP-2026-000082-02,OPP-2026-000082,2,Qualification,Discovery,2026-06-10T04:04:03,stage_advanced
+STG-OPP-2026-000082-03,OPP-2026-000082,3,Discovery,Closed Lost,2026-06-16T08:41:04,lost:timing
+STG-OPP-2026-000083-01,OPP-2026-000083,1,,Qualification,2026-06-05T16:59:35,opportunity_created
+STG-OPP-2026-000083-02,OPP-2026-000083,2,Qualification,Discovery,2026-06-08T17:35:25,stage_advanced
+STG-OPP-2026-000083-03,OPP-2026-000083,3,Discovery,Proposal,2026-06-21T22:32:27,stage_advanced
+STG-OPP-2026-000083-04,OPP-2026-000083,4,Proposal,Negotiation,2026-07-01T16:24:22,stage_advanced
+STG-OPP-2026-000083-05,OPP-2026-000083,5,Negotiation,Closed Won,2026-07-10T02:42:44,won:product_fit
+STG-OPP-2026-000084-01,OPP-2026-000084,1,,Qualification,2026-06-07T21:52:42,opportunity_created
+STG-OPP-2026-000084-02,OPP-2026-000084,2,Qualification,Discovery,2026-06-10T05:29:07,stage_advanced
+STG-OPP-2026-000084-03,OPP-2026-000084,3,Discovery,Proposal,2026-06-21T04:03:53,stage_advanced
+STG-OPP-2026-000084-04,OPP-2026-000084,4,Proposal,Negotiation,2026-06-30T14:43:59,stage_advanced
+STG-OPP-2026-000084-05,OPP-2026-000084,5,Negotiation,Closed Won,2026-07-08T07:06:16,won:features
+STG-OPP-2026-000085-01,OPP-2026-000085,1,,Qualification,2026-06-08T06:35:30,opportunity_created
+STG-OPP-2026-000085-02,OPP-2026-000085,2,Qualification,Closed Lost,2026-06-10T20:31:51,lost:timing
+STG-OPP-2026-000086-01,OPP-2026-000086,1,,Qualification,2026-06-08T13:05:12,opportunity_created
+STG-OPP-2026-000086-02,OPP-2026-000086,2,Qualification,Discovery,2026-06-14T08:11:23,stage_advanced
+STG-OPP-2026-000086-03,OPP-2026-000086,3,Discovery,Proposal,2026-06-21T00:35:27,stage_advanced
+STG-OPP-2026-000086-04,OPP-2026-000086,4,Proposal,Negotiation,2026-07-03T15:03:16,stage_advanced
+STG-OPP-2026-000086-05,OPP-2026-000086,5,Negotiation,Closed Won,2026-07-17T22:42:45,won:price
+STG-OPP-2026-000087-01,OPP-2026-000087,1,,Qualification,2026-06-08T14:33:54,opportunity_created
+STG-OPP-2026-000087-02,OPP-2026-000087,2,Qualification,Discovery,2026-06-12T11:24:23,stage_advanced
+STG-OPP-2026-000087-03,OPP-2026-000087,3,Discovery,Proposal,2026-06-19T17:13:15,stage_advanced
+STG-OPP-2026-000087-04,OPP-2026-000087,4,Proposal,Negotiation,2026-07-06T16:29:32,stage_advanced
+STG-OPP-2026-000087-05,OPP-2026-000087,5,Negotiation,Closed Won,2026-07-24T18:59:54,won:features
+STG-OPP-2026-000088-01,OPP-2026-000088,1,,Qualification,2026-06-10T16:18:17,opportunity_created
+STG-OPP-2026-000088-02,OPP-2026-000088,2,Qualification,Discovery,2026-06-18T08:51:31,stage_advanced
+STG-OPP-2026-000088-03,OPP-2026-000088,3,Discovery,Closed Lost,2026-06-29T11:06:15,lost:timing
+STG-OPP-2026-000089-01,OPP-2026-000089,1,,Qualification,2026-06-10T17:30:54,opportunity_created
+STG-OPP-2026-000089-02,OPP-2026-000089,2,Qualification,Closed Lost,2026-06-15T10:50:49,lost:timing
+STG-OPP-2026-000090-01,OPP-2026-000090,1,,Qualification,2026-06-12T02:14:28,opportunity_created
+STG-OPP-2026-000090-02,OPP-2026-000090,2,Qualification,Discovery,2026-06-14T03:23:40,stage_advanced
+STG-OPP-2026-000090-03,OPP-2026-000090,3,Discovery,Closed Lost,2026-06-25T10:49:24,lost:timing
+STG-OPP-2026-000091-01,OPP-2026-000091,1,,Qualification,2026-06-12T08:58:20,opportunity_created
+STG-OPP-2026-000091-02,OPP-2026-000091,2,Qualification,Closed Lost,2026-06-19T09:53:37,lost:timing
+STG-OPP-2026-000092-01,OPP-2026-000092,1,,Qualification,2026-06-12T11:11:42,opportunity_created
+STG-OPP-2026-000092-02,OPP-2026-000092,2,Qualification,Closed Lost,2026-06-18T00:49:24,lost:timing
+STG-OPP-2026-000093-01,OPP-2026-000093,1,,Qualification,2026-06-14T11:56:11,opportunity_created
+STG-OPP-2026-000093-02,OPP-2026-000093,2,Qualification,Closed Lost,2026-06-22T03:55:47,lost:timing
+STG-OPP-2026-000094-01,OPP-2026-000094,1,,Qualification,2026-06-16T11:15:44,opportunity_created
+STG-OPP-2026-000094-02,OPP-2026-000094,2,Qualification,Discovery,2026-06-24T17:57:26,stage_advanced
+STG-OPP-2026-000094-03,OPP-2026-000094,3,Discovery,Proposal,2026-07-04T01:49:11,stage_advanced
+STG-OPP-2026-000094-04,OPP-2026-000094,4,Proposal,Negotiation,2026-07-15T13:47:13,stage_advanced
+STG-OPP-2026-000094-05,OPP-2026-000094,5,Negotiation,Closed Lost,2026-07-25T09:58:20,lost:price
+STG-OPP-2026-000095-01,OPP-2026-000095,1,,Qualification,2026-06-17T16:36:26,opportunity_created
+STG-OPP-2026-000095-02,OPP-2026-000095,2,Qualification,Discovery,2026-06-25T02:38:29,stage_advanced
+STG-OPP-2026-000095-03,OPP-2026-000095,3,Discovery,Proposal,2026-07-04T05:06:20,stage_advanced
+STG-OPP-2026-000095-04,OPP-2026-000095,4,Proposal,Negotiation,2026-07-20T08:51:55,stage_advanced
+STG-OPP-2026-000095-05,OPP-2026-000095,5,Negotiation,Closed Won,2026-07-29T05:29:53,won:product_fit
+STG-OPP-2026-000096-01,OPP-2026-000096,1,,Qualification,2026-06-18T03:51:12,opportunity_created
+STG-OPP-2026-000096-02,OPP-2026-000096,2,Qualification,Closed Lost,2026-06-23T02:28:29,lost:not_a_fit
+STG-OPP-2026-000097-01,OPP-2026-000097,1,,Qualification,2026-06-19T12:15:13,opportunity_created
+STG-OPP-2026-000097-02,OPP-2026-000097,2,Qualification,Discovery,2026-06-22T10:30:14,stage_advanced
+STG-OPP-2026-000097-03,OPP-2026-000097,3,Discovery,Proposal,2026-07-02T07:32:05,stage_advanced
+STG-OPP-2026-000097-04,OPP-2026-000097,4,Proposal,Negotiation,2026-07-15T07:46:53,stage_advanced
+STG-OPP-2026-000097-05,OPP-2026-000097,5,Negotiation,Closed Won,2026-07-25T20:26:03,won:relationship
+STG-OPP-2026-000098-01,OPP-2026-000098,1,,Qualification,2026-06-19T14:23:58,opportunity_created
+STG-OPP-2026-000098-02,OPP-2026-000098,2,Qualification,Closed Lost,2026-06-23T04:23:34,lost:timing
+STG-OPP-2026-000099-01,OPP-2026-000099,1,,Qualification,2026-06-20T13:48:20,opportunity_created
+STG-OPP-2026-000099-02,OPP-2026-000099,2,Qualification,Discovery,2026-06-22T19:46:53,stage_advanced
+STG-OPP-2026-000099-03,OPP-2026-000099,3,Discovery,Closed Lost,2026-07-06T06:04:07,lost:timing
+STG-OPP-2026-000100-01,OPP-2026-000100,1,,Qualification,2026-06-20T20:47:54,opportunity_created
+STG-OPP-2026-000100-02,OPP-2026-000100,2,Qualification,Discovery,2026-06-28T02:10:13,stage_advanced
+STG-OPP-2026-000100-03,OPP-2026-000100,3,Discovery,Proposal,2026-07-07T12:13:59,stage_advanced
+STG-OPP-2026-000100-04,OPP-2026-000100,4,Proposal,Negotiation,2026-07-15T22:31:56,stage_advanced
+STG-OPP-2026-000100-05,OPP-2026-000100,5,Negotiation,Closed Won,2026-07-23T07:15:53,won:relationship
+STG-OPP-2026-000101-01,OPP-2026-000101,1,,Qualification,2026-06-23T16:08:27,opportunity_created
+STG-OPP-2026-000101-02,OPP-2026-000101,2,Qualification,Discovery,2026-06-25T18:25:36,stage_advanced
+STG-OPP-2026-000101-03,OPP-2026-000101,3,Discovery,Proposal,2026-06-30T23:04:08,stage_advanced
+STG-OPP-2026-000101-04,OPP-2026-000101,4,Proposal,Negotiation,2026-07-16T15:49:07,stage_advanced
+STG-OPP-2026-000101-05,OPP-2026-000101,5,Negotiation,Closed Won,2026-07-22T04:35:59,won:price
+STG-OPP-2026-000102-01,OPP-2026-000102,1,,Qualification,2026-06-24T13:49:13,opportunity_created
+STG-OPP-2026-000102-02,OPP-2026-000102,2,Qualification,Closed Lost,2026-06-29T06:27:04,lost:timing
+STG-OPP-2026-000103-01,OPP-2026-000103,1,,Qualification,2026-06-27T20:38:47,opportunity_created
+STG-OPP-2026-000103-02,OPP-2026-000103,2,Qualification,Discovery,2026-06-30T00:39:50,stage_advanced
+STG-OPP-2026-000103-03,OPP-2026-000103,3,Discovery,Closed Lost,2026-07-12T10:09:52,lost:timing
+STG-OPP-2026-000104-01,OPP-2026-000104,1,,Qualification,2026-06-28T06:18:18,opportunity_created
+STG-OPP-2026-000104-02,OPP-2026-000104,2,Qualification,Discovery,2026-07-05T00:47:20,stage_advanced
+STG-OPP-2026-000104-03,OPP-2026-000104,3,Discovery,Closed Lost,2026-07-12T19:59:06,lost:timing
+STG-OPP-2026-000105-01,OPP-2026-000105,1,,Qualification,2026-06-30T03:26:54,opportunity_created
+STG-OPP-2026-000105-02,OPP-2026-000105,2,Qualification,Discovery,2026-07-07T07:42:38,stage_advanced
+STG-OPP-2026-000105-03,OPP-2026-000105,3,Discovery,Closed Lost,2026-07-14T06:39:01,lost:timing
+STG-OPP-2026-000106-01,OPP-2026-000106,1,,Qualification,2026-07-01T17:21:50,opportunity_created
+STG-OPP-2026-000106-02,OPP-2026-000106,2,Qualification,Discovery,2026-07-06T17:51:50,stage_advanced
+STG-OPP-2026-000106-03,OPP-2026-000106,3,Discovery,Proposal,2026-07-11T09:05:49,stage_advanced
+STG-OPP-2026-000106-04,OPP-2026-000106,4,Proposal,Negotiation,2026-07-29T01:57:37,stage_advanced
+STG-OPP-2026-000106-05,OPP-2026-000106,5,Negotiation,Closed Won,2026-08-14T07:15:04,won:product_fit
+STG-OPP-2026-000107-01,OPP-2026-000107,1,,Qualification,2026-07-04T13:10:25,opportunity_created
+STG-OPP-2026-000107-02,OPP-2026-000107,2,Qualification,Closed Lost,2026-07-07T04:59:01,lost:timing
+STG-OPP-2026-000108-01,OPP-2026-000108,1,,Qualification,2026-07-05T04:52:32,opportunity_created
+STG-OPP-2026-000108-02,OPP-2026-000108,2,Qualification,Discovery,2026-07-08T12:28:00,stage_advanced
+STG-OPP-2026-000108-03,OPP-2026-000108,3,Discovery,Proposal,2026-07-12T22:40:05,stage_advanced
+STG-OPP-2026-000108-04,OPP-2026-000108,4,Proposal,Negotiation,2026-07-18T06:43:19,stage_advanced
+STG-OPP-2026-000108-05,OPP-2026-000108,5,Negotiation,Closed Won,2026-07-25T01:37:19,won:product_fit
+STG-OPP-2026-000109-01,OPP-2026-000109,1,,Qualification,2026-07-06T02:24:44,opportunity_created
+STG-OPP-2026-000109-02,OPP-2026-000109,2,Qualification,Discovery,2026-07-11T00:14:16,stage_advanced
+STG-OPP-2026-000109-03,OPP-2026-000109,3,Discovery,Closed Lost,2026-07-18T10:46:53,lost:timing
+STG-OPP-2026-000110-01,OPP-2026-000110,1,,Qualification,2026-07-06T15:18:02,opportunity_created
+STG-OPP-2026-000110-02,OPP-2026-000110,2,Qualification,Discovery,2026-07-08T20:42:26,stage_advanced
+STG-OPP-2026-000110-03,OPP-2026-000110,3,Discovery,Closed Lost,2026-07-15T22:30:14,lost:timing
+STG-OPP-2026-000111-01,OPP-2026-000111,1,,Qualification,2026-07-08T01:01:01,opportunity_created
+STG-OPP-2026-000111-02,OPP-2026-000111,2,Qualification,Closed Lost,2026-07-13T09:22:12,lost:timing
+STG-OPP-2026-000112-01,OPP-2026-000112,1,,Qualification,2026-07-09T05:51:02,opportunity_created
+STG-OPP-2026-000112-02,OPP-2026-000112,2,Qualification,Discovery,2026-07-18T03:22:53,stage_advanced
+STG-OPP-2026-000112-03,OPP-2026-000112,3,Discovery,Proposal,2026-07-22T12:22:26,stage_advanced
+STG-OPP-2026-000112-04,OPP-2026-000112,4,Proposal,Closed Lost,2026-07-31T10:43:34,lost:price
+STG-OPP-2026-000113-01,OPP-2026-000113,1,,Qualification,2026-07-10T09:29:21,opportunity_created
+STG-OPP-2026-000113-02,OPP-2026-000113,2,Qualification,Discovery,2026-07-14T07:48:57,stage_advanced
+STG-OPP-2026-000113-03,OPP-2026-000113,3,Discovery,Proposal,2026-07-18T08:10:25,stage_advanced
+STG-OPP-2026-000113-04,OPP-2026-000113,4,Proposal,Closed Lost,2026-08-01T13:17:51,lost:price
+STG-OPP-2026-000114-01,OPP-2026-000114,1,,Qualification,2026-07-10T20:52:11,opportunity_created
+STG-OPP-2026-000114-02,OPP-2026-000114,2,Qualification,Discovery,2026-07-14T11:32:40,stage_advanced
+STG-OPP-2026-000114-03,OPP-2026-000114,3,Discovery,Closed Lost,2026-07-25T00:22:10,lost:timing
+STG-OPP-2026-000115-01,OPP-2026-000115,1,,Qualification,2026-07-12T20:22:34,opportunity_created
+STG-OPP-2026-000115-02,OPP-2026-000115,2,Qualification,Discovery,2026-07-15T11:45:36,stage_advanced
+STG-OPP-2026-000115-03,OPP-2026-000115,3,Discovery,Proposal,2026-07-27T01:57:36,stage_advanced
+STG-OPP-2026-000115-04,OPP-2026-000115,4,Proposal,Negotiation,2026-08-12T09:14:29,stage_advanced
+STG-OPP-2026-000115-05,OPP-2026-000115,5,Negotiation,Closed Won,2026-08-18T00:45:33,won:relationship
+STG-OPP-2026-000116-01,OPP-2026-000116,1,,Qualification,2026-07-13T17:57:49,opportunity_created
+STG-OPP-2026-000116-02,OPP-2026-000116,2,Qualification,Discovery,2026-07-17T13:33:36,stage_advanced
+STG-OPP-2026-000116-03,OPP-2026-000116,3,Discovery,Proposal,2026-07-26T23:15:47,stage_advanced
+STG-OPP-2026-000116-04,OPP-2026-000116,4,Proposal,Closed Lost,2026-08-05T19:39:58,lost:price
+STG-OPP-2026-000117-01,OPP-2026-000117,1,,Qualification,2026-07-14T04:04:57,opportunity_created
+STG-OPP-2026-000117-02,OPP-2026-000117,2,Qualification,Discovery,2026-07-20T21:07:03,stage_advanced
+STG-OPP-2026-000117-04,OPP-2026-000117,4,Proposal,Negotiation,2026-08-02T13:42:35,stage_advanced
+STG-OPP-2026-000117-05,OPP-2026-000117,5,Negotiation,Closed Won,2026-08-12T17:56:37,won:price
+STG-OPP-2026-000118-01,OPP-2026-000118,1,,Qualification,2026-07-15T12:06:32,opportunity_created
+STG-OPP-2026-000118-02,OPP-2026-000118,2,Qualification,Discovery,2026-07-20T17:03:29,stage_advanced
+STG-OPP-2026-000118-03,OPP-2026-000118,3,Discovery,Proposal,2026-08-02T01:38:58,stage_advanced
+STG-OPP-2026-000118-04,OPP-2026-000118,4,Proposal,Negotiation,2026-08-11T20:27:10,stage_advanced
+STG-OPP-2026-000118-05,OPP-2026-000118,5,Negotiation,Closed Won,2026-08-19T00:33:45,won:product_fit
+STG-OPP-2026-000119-01,OPP-2026-000119,1,,Qualification,2026-07-15T14:25:51,opportunity_created
+STG-OPP-2026-000119-02,OPP-2026-000119,2,Qualification,Discovery,2026-07-21T13:09:43,stage_advanced
+STG-OPP-2026-000119-03,OPP-2026-000119,3,Discovery,Closed Lost,2026-07-28T10:56:15,lost:competitor
+STG-OPP-2026-000120-01,OPP-2026-000120,1,,Qualification,2026-07-16T13:40:44,opportunity_created
+STG-OPP-2026-000120-03,OPP-2026-000120,3,Discovery,Proposal,2026-07-26T04:27:11,stage_advanced
+STG-OPP-2026-000120-04,OPP-2026-000120,4,Proposal,Negotiation,2026-08-10T02:45:12,stage_advanced
+STG-OPP-2026-000120-05,OPP-2026-000120,5,Negotiation,Closed Lost,2026-08-18T21:08:48,lost:competitor
+STG-OPP-2026-000121-01,OPP-2026-000121,1,,Qualification,2026-07-17T10:33:42,opportunity_created
+STG-OPP-2026-000121-02,OPP-2026-000121,2,Qualification,Discovery,2026-07-25T01:48:25,stage_advanced
+STG-OPP-2026-000121-03,OPP-2026-000121,3,Discovery,Closed Lost,2026-07-31T16:09:45,lost:timing
+STG-OPP-2026-000122-01,OPP-2026-000122,1,,Qualification,2026-07-20T00:06:06,opportunity_created
+STG-OPP-2026-000122-02,OPP-2026-000122,2,Qualification,Discovery,2026-07-23T19:15:31,stage_advanced
+STG-OPP-2026-000122-03,OPP-2026-000122,3,Discovery,Proposal,2026-08-02T04:33:10,stage_advanced
+STG-OPP-2026-000122-04,OPP-2026-000122,4,Proposal,Negotiation,2026-08-10T13:45:32,stage_advanced
+STG-OPP-2026-000122-05,OPP-2026-000122,5,Negotiation,Closed Won,2026-08-20T12:31:45,won:features
+STG-OPP-2026-000123-01,OPP-2026-000123,1,,Qualification,2026-07-24T14:42:08,opportunity_created
+STG-OPP-2026-000123-02,OPP-2026-000123,2,Qualification,Discovery,2026-07-27T05:00:40,stage_advanced
+STG-OPP-2026-000123-03,OPP-2026-000123,3,Discovery,Proposal,2026-08-09T15:02:59,stage_advanced
+STG-OPP-2026-000123-04,OPP-2026-000123,4,Proposal,Closed Lost,2026-08-22T21:02:09,lost:price
+STG-OPP-2026-000124-01,OPP-2026-000124,1,,Qualification,2026-07-25T20:01:34,opportunity_created
+STG-OPP-2026-000124-02,OPP-2026-000124,2,Qualification,Discovery,2026-08-03T14:42:33,stage_advanced
+STG-OPP-2026-000124-03,OPP-2026-000124,3,Discovery,Closed Lost,2026-08-10T13:38:03,lost:timing
+STG-OPP-2026-000125-01,OPP-2026-000125,1,,Qualification,2026-07-28T12:18:55,opportunity_created
+STG-OPP-2026-000125-02,OPP-2026-000125,2,Qualification,Discovery,2026-08-05T14:51:09,stage_advanced
+STG-OPP-2026-000125-03,OPP-2026-000125,3,Discovery,Proposal,2026-08-15T17:26:53,stage_advanced
+STG-OPP-2026-000125-04,OPP-2026-000125,4,Proposal,Closed Lost,2026-09-02T12:58:21,lost:price
+STG-OPP-2026-000126-01,OPP-2026-000126,1,,Qualification,2026-07-30T11:28:47,opportunity_created
+STG-OPP-2026-000126-02,OPP-2026-000126,2,Qualification,Discovery,2026-08-06T15:16:22,stage_advanced
+STG-OPP-2026-000126-03,OPP-2026-000126,3,Discovery,Proposal,2026-08-11T05:41:48,stage_advanced
+STG-OPP-2026-000126-04,OPP-2026-000126,4,Proposal,Negotiation,2026-08-28T08:24:25,stage_advanced
+STG-OPP-2026-000126-05,OPP-2026-000126,5,Negotiation,Closed Won,2026-09-07T14:48:36,won:features
+STG-OPP-2026-000127-01,OPP-2026-000127,1,,Qualification,2026-08-01T09:41:54,opportunity_created
+STG-OPP-2026-000127-02,OPP-2026-000127,2,Qualification,Discovery,2026-08-06T14:23:57,stage_advanced
+STG-OPP-2026-000127-03,OPP-2026-000127,3,Discovery,Proposal,2026-08-14T09:18:16,stage_advanced
+STG-OPP-2026-000127-04,OPP-2026-000127,4,Proposal,Negotiation,2026-08-30T07:49:16,stage_advanced
+STG-OPP-2026-000127-05,OPP-2026-000127,5,Negotiation,Closed Won,2026-09-07T01:55:11,won:features
+STG-OPP-2026-000128-01,OPP-2026-000128,1,,Qualification,2026-08-03T23:59:35,opportunity_created
+STG-OPP-2026-000128-02,OPP-2026-000128,2,Qualification,Discovery,2026-08-07T05:59:05,stage_advanced
+STG-OPP-2026-000128-03,OPP-2026-000128,3,Discovery,Proposal,2026-08-13T13:29:10,stage_advanced
+STG-OPP-2026-000128-04,OPP-2026-000128,4,Proposal,Closed Lost,2026-08-18T23:09:51,lost:price
+STG-OPP-2026-000129-01,OPP-2026-000129,1,,Qualification,2026-08-09T21:05:28,opportunity_created
+STG-OPP-2026-000129-02,OPP-2026-000129,2,Qualification,Discovery,2026-08-17T09:08:18,stage_advanced
+STG-OPP-2026-000129-03,OPP-2026-000129,3,Discovery,Proposal,2026-08-22T08:42:41,stage_advanced
+STG-OPP-2026-000129-04,OPP-2026-000129,4,Proposal,Negotiation,2026-09-01T16:08:48,stage_advanced
+STG-OPP-2026-000129-05,OPP-2026-000129,5,Negotiation,Closed Won,2026-09-06T05:24:52,won:features
+STG-OPP-2026-000130-01,OPP-2026-000130,1,,Qualification,2026-08-10T23:28:42,opportunity_created
+STG-OPP-2026-000130-02,OPP-2026-000130,2,Qualification,Discovery,2026-08-13T02:12:20,stage_advanced
+STG-OPP-2026-000130-03,OPP-2026-000130,3,Discovery,Proposal,2026-08-24T10:14:13,stage_advanced
+STG-OPP-2026-000130-04,OPP-2026-000130,4,Proposal,Negotiation,2026-09-07T11:55:38,stage_advanced
+STG-OPP-2026-000130-05,OPP-2026-000130,5,Negotiation,Closed Won,2026-09-18T19:41:01,won:relationship
+STG-OPP-2026-000131-01,OPP-2026-000131,1,,Qualification,2026-08-13T15:11:02,opportunity_created
+STG-OPP-2026-000131-02,OPP-2026-000131,2,Qualification,Discovery,2026-08-17T01:03:11,stage_advanced
+STG-OPP-2026-000131-03,OPP-2026-000131,3,Discovery,Proposal,2026-08-24T18:49:31,stage_advanced
+STG-OPP-2026-000131-04,OPP-2026-000131,4,Proposal,Negotiation,2026-09-06T16:12:29,stage_advanced
+STG-OPP-2026-000131-05,OPP-2026-000131,5,Negotiation,Closed Won,2026-09-17T13:34:06,won:price
+STG-OPP-2026-000132-01,OPP-2026-000132,1,,Qualification,2026-08-18T22:23:10,opportunity_created
+STG-OPP-2026-000132-02,OPP-2026-000132,2,Qualification,Discovery,2026-08-25T06:32:35,stage_advanced
+STG-OPP-2026-000132-03,OPP-2026-000132,3,Discovery,Proposal,2026-09-01T16:24:18,stage_advanced
+STG-OPP-2026-000132-04,OPP-2026-000132,4,Proposal,Closed Lost,2026-09-10T09:13:51,lost:price
+STG-OPP-2026-000133-01,OPP-2026-000133,1,,Qualification,2026-08-21T09:25:18,opportunity_created
+STG-OPP-2026-000133-02,OPP-2026-000133,2,Qualification,Discovery,2026-08-28T02:15:59,stage_advanced
+STG-OPP-2026-000133-03,OPP-2026-000133,3,Discovery,Proposal,2026-09-10T14:35:40,stage_advanced
+STG-OPP-2026-000133-04,OPP-2026-000133,4,Proposal,Negotiation,2026-09-26T02:53:20,stage_advanced
+STG-OPP-2026-000133-05,OPP-2026-000133,5,Negotiation,Closed Won,2026-10-06T22:17:29,won:relationship
+STG-OPP-2026-000134-01,OPP-2026-000134,1,,Qualification,2026-08-24T02:52:26,opportunity_created
+STG-OPP-2026-000134-02,OPP-2026-000134,2,Qualification,Discovery,2026-08-27T10:37:48,stage_advanced
+STG-OPP-2026-000134-03,OPP-2026-000134,3,Discovery,Proposal,2026-09-04T20:07:50,stage_advanced
+STG-OPP-2026-000134-04,OPP-2026-000134,4,Proposal,Negotiation,2026-09-16T15:30:31,stage_advanced
+STG-OPP-2026-000134-05,OPP-2026-000134,5,Negotiation,Closed Lost,2026-10-05T05:20:41,lost:price
+STG-OPP-2026-000135-01,OPP-2026-000135,1,,Qualification,2026-08-24T23:38:01,opportunity_created
+STG-OPP-2026-000135-02,OPP-2026-000135,2,Qualification,Discovery,2026-08-31T14:19:40,stage_advanced
+STG-OPP-2026-000135-03,OPP-2026-000135,3,Discovery,Proposal,2026-09-05T06:35:07,stage_advanced
+STG-OPP-2026-000135-04,OPP-2026-000135,4,Proposal,Negotiation,2026-09-14T16:12:19,stage_advanced
+STG-OPP-2026-000135-05,OPP-2026-000135,5,Negotiation,Closed Won,2026-09-25T10:37:49,won:features
+STG-OPP-2026-000136-01,OPP-2026-000136,1,,Qualification,2026-08-25T18:28:15,opportunity_created
+STG-OPP-2026-000136-02,OPP-2026-000136,2,Qualification,Discovery,2026-09-02T10:43:07,stage_advanced
+STG-OPP-2026-000136-03,OPP-2026-000136,3,Discovery,Proposal,2026-09-14T15:10:27,stage_advanced
+STG-OPP-2026-000136-04,OPP-2026-000136,4,Proposal,Negotiation,2026-09-23T12:29:40,stage_advanced
+STG-OPP-2026-000136-05,OPP-2026-000136,5,Negotiation,Closed Won,2026-09-30T13:25:33,won:relationship
+STG-OPP-2026-000137-01,OPP-2026-000137,1,,Qualification,2026-08-28T03:12:15,opportunity_created
+STG-OPP-2026-000137-02,OPP-2026-000137,2,Qualification,Discovery,2026-09-02T17:30:05,stage_advanced
+STG-OPP-2026-000137-03,OPP-2026-000137,3,Discovery,Proposal,2026-09-07T01:11:10,stage_advanced
+STG-OPP-2026-000137-04,OPP-2026-000137,4,Proposal,Closed Lost,2026-09-17T01:34:19,lost:price
+STG-OPP-2026-000138-01,OPP-2026-000138,1,,Qualification,2026-08-28T19:32:16,opportunity_created
+STG-OPP-2026-000138-02,OPP-2026-000138,2,Qualification,Discovery,2026-09-01T01:51:29,stage_advanced
+STG-OPP-2026-000138-03,OPP-2026-000138,3,Discovery,Proposal,2026-09-11T19:22:27,stage_advanced
+STG-OPP-2026-000138-04,OPP-2026-000138,4,Proposal,Negotiation,2026-09-20T04:16:50,stage_advanced
+STG-OPP-2026-000138-05,OPP-2026-000138,5,Negotiation,Closed Won,2026-10-02T21:08:49,won:features
+STG-OPP-2026-000139-01,OPP-2026-000139,1,,Qualification,2026-08-30T04:11:23,opportunity_created
+STG-OPP-2026-000139-02,OPP-2026-000139,2,Qualification,Discovery,2026-09-06T21:24:00,stage_advanced
+STG-OPP-2026-000139-03,OPP-2026-000139,3,Discovery,Closed Lost,2026-09-11T11:21:16,lost:timing
+STG-OPP-2026-000140-01,OPP-2026-000140,1,,Qualification,2026-08-30T23:24:57,opportunity_created
+STG-OPP-2026-000140-02,OPP-2026-000140,2,Qualification,Discovery,2026-09-05T12:41:25,stage_advanced
+STG-OPP-2026-000140-03,OPP-2026-000140,3,Discovery,Proposal,2026-09-15T13:56:29,stage_advanced
+STG-OPP-2026-000140-04,OPP-2026-000140,4,Proposal,Negotiation,2026-09-25T06:53:12,stage_advanced
+STG-OPP-2026-000140-05,OPP-2026-000140,5,Negotiation,Closed Lost,2026-10-05T06:16:27,lost:price
+STG-OPP-2026-000141-01,OPP-2026-000141,1,,Qualification,2026-09-03T23:31:54,opportunity_created
+STG-OPP-2026-000141-02,OPP-2026-000141,2,Qualification,Discovery,2026-09-12T06:10:41,stage_advanced
+STG-OPP-2026-000141-03,OPP-2026-000141,3,Discovery,Closed Lost,2026-09-18T13:06:44,lost:timing
+STG-OPP-2026-000142-01,OPP-2026-000142,1,,Qualification,2026-09-06T15:35:38,opportunity_created
+STG-OPP-2026-000142-02,OPP-2026-000142,2,Qualification,Discovery,2026-09-09T18:01:42,stage_advanced
+STG-OPP-2026-000142-03,OPP-2026-000142,3,Discovery,Proposal,2026-09-17T03:49:03,stage_advanced
+STG-OPP-2026-000142-04,OPP-2026-000142,4,Proposal,Closed Lost,2026-09-30T22:27:30,lost:price
+STG-OPP-2026-000143-01,OPP-2026-000143,1,,Qualification,2026-09-08T22:40:50,opportunity_created
+STG-OPP-2026-000143-02,OPP-2026-000143,2,Qualification,Discovery,2026-09-11T21:10:06,stage_advanced
+STG-OPP-2026-000143-03,OPP-2026-000143,3,Discovery,Closed Lost,2026-09-21T16:35:22,lost:timing
+STG-OPP-2026-000144-01,OPP-2026-000144,1,,Qualification,2026-09-10T15:16:07,opportunity_created
+STG-OPP-2026-000144-02,OPP-2026-000144,2,Qualification,Discovery,2026-09-13T10:21:57,stage_advanced
+STG-OPP-2026-000144-03,OPP-2026-000144,3,Discovery,Proposal,2026-09-23T09:40:19,stage_advanced
+STG-OPP-2026-000144-04,OPP-2026-000144,4,Proposal,Closed Lost,2026-10-06T03:39:28,lost:price
+STG-OPP-2026-000145-01,OPP-2026-000145,1,,Qualification,2026-09-13T00:07:25,opportunity_created
+STG-OPP-2026-000145-02,OPP-2026-000145,2,Qualification,Discovery,2026-09-17T06:19:42,stage_advanced
+STG-OPP-2026-000145-03,OPP-2026-000145,3,Discovery,Proposal,2026-09-24T21:01:44,stage_advanced
+STG-OPP-2026-000145-04,OPP-2026-000145,4,Proposal,Closed Lost,2026-09-30T18:43:10,lost:price
+STG-OPP-2026-000146-01,OPP-2026-000146,1,,Qualification,2026-09-14T20:12:18,opportunity_created
+STG-OPP-2026-000146-02,OPP-2026-000146,2,Qualification,Discovery,2026-09-20T14:56:37,stage_advanced
+STG-OPP-2026-000146-03,OPP-2026-000146,3,Discovery,Proposal,2026-09-25T15:46:51,stage_advanced
+STG-OPP-2026-000146-04,OPP-2026-000146,4,Proposal,Negotiation,2026-10-02T14:09:00,stage_advanced
+STG-OPP-2026-000146-05,OPP-2026-000146,5,Negotiation,Closed Won,2026-10-15T12:45:52,won:product_fit
+STG-OPP-2026-000147-01,OPP-2026-000147,1,,Qualification,2026-09-16T06:27:46,opportunity_created
+STG-OPP-2026-000147-02,OPP-2026-000147,2,Qualification,Discovery,2026-09-21T17:43:25,stage_advanced
+STG-OPP-2026-000147-03,OPP-2026-000147,3,Discovery,Proposal,2026-09-26T00:37:56,stage_advanced
+STG-OPP-2026-000147-04,OPP-2026-000147,4,Proposal,Negotiation,2026-10-11T18:55:22,stage_advanced
+STG-OPP-2026-000148-01,OPP-2026-000148,1,,Qualification,2026-09-17T22:32:38,opportunity_created
+STG-OPP-2026-000148-02,OPP-2026-000148,2,Qualification,Discovery,2026-09-23T20:34:05,stage_advanced
+STG-OPP-2026-000148-03,OPP-2026-000148,3,Discovery,Proposal,2026-10-04T23:37:35,stage_advanced
+STG-OPP-2026-000148-04,OPP-2026-000148,4,Proposal,Negotiation,2026-10-13T08:37:57,stage_advanced
+STG-OPP-2026-000149-01,OPP-2026-000149,1,,Qualification,2026-09-20T17:19:25,opportunity_created
+STG-OPP-2026-000149-02,OPP-2026-000149,2,Qualification,Discovery,2026-09-24T20:44:19,stage_advanced
+STG-OPP-2026-000149-03,OPP-2026-000149,3,Discovery,Proposal,2026-10-05T05:36:49,stage_advanced
+STG-OPP-2026-000149-04,OPP-2026-000149,4,Proposal,Negotiation,2026-10-12T17:01:18,stage_advanced
+STG-OPP-2026-000150-01,OPP-2026-000150,1,,Qualification,2026-09-22T01:39:39,opportunity_created
+STG-OPP-2026-000150-02,OPP-2026-000150,2,Qualification,Discovery,2026-09-27T22:24:01,stage_advanced
+STG-OPP-2026-000150-03,OPP-2026-000150,3,Discovery,Proposal,2026-10-08T15:21:37,stage_advanced

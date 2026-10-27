@@ -1,0 +1,47 @@
+rule_id,rule_version,category,feature,operator,value,points,cap_units,effective_from,effective_to,description
+SR-v1-001,1,fit,employee_band,eq,1000+,15,,2026-01-01T00:00:00,2026-06-01T00:00:00,Company has 1000+ employees
+SR-v1-002,1,fit,employee_band,eq,201-1000,10,,2026-01-01T00:00:00,2026-06-01T00:00:00,Company has 201-1000 employees
+SR-v1-003,1,fit,employee_band,eq,51-200,6,,2026-01-01T00:00:00,2026-06-01T00:00:00,Company has 51-200 employees
+SR-v1-004,1,fit,employee_band,eq,11-50,3,,2026-01-01T00:00:00,2026-06-01T00:00:00,Company has 11-50 employees
+SR-v1-005,1,fit,industry_target,eq,1,10,,2026-01-01T00:00:00,2026-06-01T00:00:00,Company is in a target industry
+SR-v1-006,1,fit,seniority,eq,c_level,10,,2026-01-01T00:00:00,2026-06-01T00:00:00,Contact is C-level
+SR-v1-007,1,fit,seniority,eq,vp,10,,2026-01-01T00:00:00,2026-06-01T00:00:00,Contact is VP
+SR-v1-008,1,fit,seniority,eq,director,7,,2026-01-01T00:00:00,2026-06-01T00:00:00,Contact is Director
+SR-v1-009,1,fit,seniority,eq,manager,4,,2026-01-01T00:00:00,2026-06-01T00:00:00,Contact is Manager
+SR-v1-010,1,fit,free_email,eq,1,-8,,2026-01-01T00:00:00,2026-06-01T00:00:00,Contact uses a free-mail address
+SR-v1-011,1,intent,source,eq,referral,12,,2026-01-01T00:00:00,2026-06-01T00:00:00,Source: referral
+SR-v1-012,1,intent,source,eq,partner,8,,2026-01-01T00:00:00,2026-06-01T00:00:00,Source: partner
+SR-v1-013,1,intent,source,eq,webinar,6,,2026-01-01T00:00:00,2026-06-01T00:00:00,Source: webinar
+SR-v1-014,1,intent,source,eq,trade_show,6,,2026-01-01T00:00:00,2026-06-01T00:00:00,Source: trade show
+SR-v1-015,1,intent,source,eq,paid_search,5,,2026-01-01T00:00:00,2026-06-01T00:00:00,Source: paid search
+SR-v1-016,1,intent,source,eq,organic_search,4,,2026-01-01T00:00:00,2026-06-01T00:00:00,Source: organic search
+SR-v1-017,1,intent,source,eq,content_download,2,,2026-01-01T00:00:00,2026-06-01T00:00:00,Source: content syndication
+SR-v1-018,1,intent,demo_requests,gte,1,20,,2026-01-01T00:00:00,2026-06-01T00:00:00,Requested a demo
+SR-v1-019,1,intent,pricing_visits,per_unit,1,5,2,2026-01-01T00:00:00,2026-06-01T00:00:00,"Pricing page visits (5 each, max 2)"
+SR-v1-020,1,engagement,email_clicks,per_unit,1,2,5,2026-01-01T00:00:00,2026-06-01T00:00:00,"Email clicks (2 each, max 5)"
+SR-v1-021,1,engagement,web_visits,per_unit,1,1,10,2026-01-01T00:00:00,2026-06-01T00:00:00,"Web visits (1 each, max 10)"
+SR-v1-022,1,engagement,recent_inbound_7d,eq,1,5,,2026-01-01T00:00:00,2026-06-01T00:00:00,Inbound engagement in the 7 days before scoring
+SR-v1-023,1,engagement,no_inbound_activity,eq,1,-5,,2026-01-01T00:00:00,2026-06-01T00:00:00,No inbound engagement at all
+SR-v2-001,2,fit,employee_band,eq,1000+,15,,2026-06-01T00:00:00,,Company has 1000+ employees
+SR-v2-002,2,fit,employee_band,eq,201-1000,10,,2026-06-01T00:00:00,,Company has 201-1000 employees
+SR-v2-003,2,fit,employee_band,eq,51-200,6,,2026-06-01T00:00:00,,Company has 51-200 employees
+SR-v2-004,2,fit,employee_band,eq,11-50,3,,2026-06-01T00:00:00,,Company has 11-50 employees
+SR-v2-005,2,fit,industry_target,eq,1,10,,2026-06-01T00:00:00,,Company is in a target industry
+SR-v2-006,2,fit,seniority,eq,c_level,10,,2026-06-01T00:00:00,,Contact is C-level
+SR-v2-007,2,fit,seniority,eq,vp,10,,2026-06-01T00:00:00,,Contact is VP
+SR-v2-008,2,fit,seniority,eq,director,7,,2026-06-01T00:00:00,,Contact is Director
+SR-v2-009,2,fit,seniority,eq,manager,4,,2026-06-01T00:00:00,,Contact is Manager
+SR-v2-010,2,fit,free_email,eq,1,-10,,2026-06-01T00:00:00,,Contact uses a free-mail address
+SR-v2-011,2,intent,source,eq,referral,12,,2026-06-01T00:00:00,,Source: referral
+SR-v2-012,2,intent,source,eq,partner,8,,2026-06-01T00:00:00,,Source: partner
+SR-v2-013,2,intent,source,eq,webinar,6,,2026-06-01T00:00:00,,Source: webinar
+SR-v2-014,2,intent,source,eq,trade_show,6,,2026-06-01T00:00:00,,Source: trade show
+SR-v2-015,2,intent,source,eq,paid_search,5,,2026-06-01T00:00:00,,Source: paid search
+SR-v2-016,2,intent,source,eq,organic_search,4,,2026-06-01T00:00:00,,Source: organic search
+SR-v2-017,2,intent,source,eq,content_download,2,,2026-06-01T00:00:00,,Source: content syndication
+SR-v2-018,2,intent,demo_requests,gte,1,25,,2026-06-01T00:00:00,,Requested a demo
+SR-v2-019,2,intent,pricing_visits,per_unit,1,5,2,2026-06-01T00:00:00,,"Pricing page visits (5 each, max 2)"
+SR-v2-020,2,engagement,email_clicks,per_unit,1,3,4,2026-06-01T00:00:00,,"Email clicks (2 each, max 5)"
+SR-v2-021,2,engagement,web_visits,per_unit,1,1,8,2026-06-01T00:00:00,,"Web visits (1 each, max 10)"
+SR-v2-022,2,engagement,recent_inbound_7d,eq,1,5,,2026-06-01T00:00:00,,Inbound engagement in the 7 days before scoring
+SR-v2-023,2,engagement,no_inbound_activity,eq,1,-5,,2026-06-01T00:00:00,,No inbound engagement at all

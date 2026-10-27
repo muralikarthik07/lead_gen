@@ -1,0 +1,251 @@
+company_id,company_name,domain,industry,employee_count,employee_band,annual_revenue_usd,country,territory,created_at
+CO-000001,Nimbus Power Partners,nimbuspowerpartners.example,Financial Services,2,1-10,356000.00,SE,EMEA-N,2024-01-13T00:08:55
+CO-000002,Silverline Software Systems,silverlinesoftwaresystems.example,Financial Services,108,51-200,13550000.00,DE,EMEA-N,2024-01-26T17:36:52
+CO-000003,Vertex Logic Systems,vertexlogicsystems.example,Manufacturing,1,1-10,84000.00,US,NORAM,2024-01-29T05:03:29
+CO-000004,Silverline Freight Group,silverlinefreightgroup.example,Manufacturing,134,51-200,34622000.00,PT,EMEA-S,2024-01-31T16:31:42
+CO-000005,Ember Pharma Partners,emberpharmapartners.example,Logistics,77,51-200,6337000.00,US,NORAM,2024-02-14T02:53:51
+CO-000006,Riverstone Security Holdings,riverstonesecurityholdings.example,Financial Services,3,1-10,558000.00,IE,EMEA-N,2024-02-14T12:31:14
+CO-000007,Meridian Materials Partners,meridianmaterialspartners.example,Financial Services,7,1-10,1504000.00,AU,APAC,2024-02-23T09:27:55
+CO-000008,Frontier Motors Industries,frontiermotorsindustries.example,Software,3,1-10,407000.00,US,NORAM,2024-03-04T22:15:41
+CO-000009,Riverstone Finance Industries,riverstonefinanceindustries.example,Healthcare,261,201-1000,24453000.00,US,NORAM,2024-03-06T09:44:11
+CO-000010,Beacon Works Industries,beaconworksindustries.example,Logistics,2,1-10,424000.00,BR,LATAM,2024-03-09T16:20:16
+CO-000011,Alpine Capital Holdings,alpinecapitalholdings.example,Healthcare,52,51-200,11266000.00,CA,NORAM,2024-03-11T07:24:35
+CO-000012,Bluepeak Insight Holdings,bluepeakinsightholdings.example,Energy,19,11-50,2069000.00,JP,APAC,2024-03-14T20:35:10
+CO-000013,Ivory Networks Solutions,ivorynetworkssolutions.example,Public Sector,99,51-200,8309000.00,DE,EMEA-N,2024-03-18T09:34:46
+CO-000014,Alpine Works Industries,alpineworksindustries.example,Financial Services,263,201-1000,21050000.00,CA,NORAM,2024-03-29T15:41:27
+CO-000015,Horizon Learning Systems,horizonlearningsystems.example,Financial Services,66,51-200,4085000.00,SE,EMEA-N,2024-04-10T14:54:03
+CO-000016,Meridian Robotics Systems,meridianroboticssystems.example,Financial Services,21,11-50,2563000.00,BR,LATAM,2024-04-15T02:12:24
+CO-000017,Riverstone Energy Solutions,riverstoneenergysolutions.example,Education,9,1-10,1897000.00,AE,EMEA-S,2024-04-15T11:01:46
+CO-000018,Jade Capital Technologies,jadecapitaltechnologies.example,Retail,574,201-1000,64795000.00,US,NORAM,2024-04-18T11:44:55
+CO-000019,Quartz Motors Group,quartzmotorsgroup.example,Financial Services,362,201-1000,42470000.00,AU,APAC,2024-04-20T13:27:25
+CO-000020,Pinnacle Health Holdings,pinnaclehealthholdings.example,Financial Services,424,201-1000,46199000.00,DE,EMEA-N,2024-04-23T09:53:29
+CO-000021,Zenith Analytics Technologies,zenithanalyticstechnologies.example,Education,25,11-50,3798000.00,PT,EMEA-S,2024-04-24T01:13:30
+CO-000022,Riverstone Logic Labs,riverstonelogiclabs.example,Logistics,229,201-1000,103559000.00,CL,LATAM,2024-04-26T23:47:13
+CO-000023,Glacier Analytics Labs,glacieranalyticslabs.example,Healthcare,1463,1000+,393859000.00,AE,EMEA-S,2024-04-28T22:07:52
+CO-000024,Zenith Textiles Partners,zenithtextilespartners.example,Education,973,201-1000,100560000.00,IN,INDIA,2024-04-30T14:55:10
+CO-000025,Tidewater Retail Industries,tidewaterretailindustries.example,Education,1,1-10,60000.00,PT,EMEA-S,2024-05-09T13:41:09
+CO-000026,Ironbridge Textiles Group,ironbridgetextilesgroup.example,Media,44,11-50,11076000.00,CA,NORAM,2024-05-15T06:27:28
+CO-000027,Zenith Cloud Group,zenithcloudgroup.example,Logistics,873,201-1000,66051000.00,IN,INDIA,2024-05-20T00:14:45
+CO-000028,Nova Networks Group,novanetworksgroup.example,Retail,2030,1000+,249921000.00,FR,EMEA-N,2024-05-22T15:15:47
+CO-000029,Indigo Freight Industries,indigofreightindustries.example,Media,90,51-200,16552000.00,IN,INDIA,2024-05-29T03:20:03
+CO-000030,Ember Data Holdings,emberdataholdings.example,Energy,866,201-1000,85988000.00,ZA,EMEA-S,2024-05-31T10:39:50
+CO-000031,Zenith Digital Systems,zenithdigitalsystems.example,Healthcare,94,51-200,24361000.00,US,NORAM,2024-06-02T21:24:15
+CO-000032,Horizon Mobility Partners,horizonmobilitypartners.example,Manufacturing,2123,1000+,206573000.00,MX,LATAM,2024-06-04T04:56:49
+CO-000033,Jade Finance Solutions,jadefinancesolutions.example,Software,34,11-50,2703000.00,US,NORAM,2024-06-05T02:48:00
+CO-000034,Nova Mobility Solutions,novamobilitysolutions.example,Retail,61,51-200,9083000.00,IN,INDIA,2024-06-06T23:27:43
+CO-000035,Redwood Cloud Technologies,redwoodcloudtechnologies.example,Energy,1,1-10,217000.00,US,NORAM,2024-06-07T18:05:09
+CO-000036,Juniper Retail Labs,juniperretaillabs.example,Logistics,4,1-10,991000.00,US,NORAM,2024-06-11T21:17:54
+CO-000037,Beacon Capital Solutions,beaconcapitalsolutions.example,Healthcare,178,51-200,11841000.00,US,NORAM,2024-06-17T06:54:01
+CO-000038,Mosaic Foods Labs,mosaicfoodslabs.example,Healthcare,644,201-1000,76023000.00,BR,LATAM,2024-06-21T06:23:23
+CO-000039,Union Dynamics Partners,uniondynamicspartners.example,Logistics,67,51-200,6545000.00,US,NORAM,2024-06-21T16:26:05
+CO-000040,Granite Robotics Labs,graniteroboticslabs.example,Energy,6,1-10,1098000.00,US,NORAM,2024-06-22T07:00:25
+CO-000041,Horizon Logistics Partners,horizonlogisticspartners.example,Energy,916,201-1000,291548000.00,ES,EMEA-S,2024-06-26T06:34:49
+CO-000042,Mosaic Mobility Technologies,mosaicmobilitytechnologies.example,Public Sector,38,11-50,8019000.00,DE,EMEA-N,2024-06-27T07:24:10
+CO-000043,Meridian Works Industries,meridianworksindustries.example,Education,15,11-50,1128000.00,US,NORAM,2024-06-29T11:31:48
+CO-000044,Bluepeak Capital Partners,bluepeakcapitalpartners.example,Logistics,6,1-10,747000.00,US,NORAM,2024-07-02T06:59:43
+CO-000045,Kestrel Analytics Systems,kestrelanalyticssystems.example,Software,145,51-200,32617000.00,BR,LATAM,2024-07-02T11:45:23
+CO-000046,Indigo Data Group,indigodatagroup.example,Energy,1,1-10,136000.00,BR,LATAM,2024-07-08T11:46:58
+CO-000047,Tidewater Dynamics Holdings,tidewaterdynamicsholdings.example,Logistics,688,201-1000,82137000.00,PT,EMEA-S,2024-07-08T14:43:30
+CO-000048,Tidewater Cloud Partners,tidewatercloudpartners.example,Education,103,51-200,5375000.00,JP,APAC,2024-07-08T19:30:14
+CO-000049,Ember Digital Industries,emberdigitalindustries.example,Public Sector,4,1-10,1110000.00,DE,EMEA-N,2024-07-10T21:53:50
+CO-000050,Keystone Learning Solutions,keystonelearningsolutions.example,Financial Services,135,51-200,17735000.00,AE,EMEA-S,2024-07-20T15:16:57
+CO-000051,Horizon Health Holdings,horizonhealthholdings.example,Financial Services,1,1-10,264000.00,BR,LATAM,2024-07-20T18:39:13
+CO-000052,Beacon Power Labs,beaconpowerlabs.example,Media,218,201-1000,33169000.00,FR,EMEA-N,2024-07-23T04:34:44
+CO-000053,Cobalt Learning Holdings,cobaltlearningholdings.example,Logistics,22,11-50,2700000.00,AU,APAC,2024-07-25T01:47:32
+CO-000054,Frontier Care Group,frontiercaregroup.example,Manufacturing,233,201-1000,13562000.00,US,NORAM,2024-07-28T02:22:46
+CO-000055,Lagoon Foods Systems,lagoonfoodssystems.example,Financial Services,99,51-200,11066000.00,FR,EMEA-N,2024-07-30T20:56:08
+CO-000056,Mosaic Retail Group,mosaicretailgroup.example,Healthcare,2,1-10,313000.00,IN,INDIA,2024-08-03T06:41:17
+CO-000057,Meridian Power Industries,meridianpowerindustries.example,Financial Services,73,51-200,9739000.00,CA,NORAM,2024-08-06T10:42:03
+CO-000058,Quartz Mobility Systems,quartzmobilitysystems.example,Software,64,51-200,10584000.00,FR,EMEA-N,2024-08-09T17:40:14
+CO-000059,Dynamo Textiles Partners,dynamotextilespartners.example,Manufacturing,251,201-1000,15873000.00,IE,EMEA-N,2024-08-19T04:48:40
+CO-000060,Union Software Holdings,unionsoftwareholdings.example,Public Sector,153,51-200,34575000.00,US,NORAM,2024-08-19T09:12:17
+CO-000061,Ember Foods Group,emberfoodsgroup.example,Healthcare,25,11-50,2905000.00,DE,EMEA-N,2024-08-20T06:35:03
+CO-000062,Lumen Cyber Holdings,lumencyberholdings.example,Logistics,6204,1000+,1419779000.00,GB,EMEA-N,2024-08-21T10:05:00
+CO-000063,Summit Software Group,summitsoftwaregroup.example,Financial Services,31,11-50,2450000.00,AE,EMEA-S,2024-08-21T12:40:23
+CO-000064,Falcon Energy Technologies,falconenergytechnologies.example,Software,96,51-200,17571000.00,US,NORAM,2024-08-25T09:14:18
+CO-000065,Horizon Retail Industries,horizonretailindustries.example,Manufacturing,95,51-200,10170000.00,GB,EMEA-N,2024-09-01T15:19:06
+CO-000066,Glacier Software Group,glaciersoftwaregroup.example,Energy,3,1-10,738000.00,US,NORAM,2024-09-02T04:22:16
+CO-000067,Quartz Motors Solutions,quartzmotorssolutions.example,Retail,382,201-1000,77687000.00,PT,EMEA-S,2024-09-04T01:42:48
+CO-000068,Jade Pharma Group,jadepharmagroup.example,Software,563,201-1000,103356000.00,GB,EMEA-N,2024-09-04T12:56:33
+CO-000069,Evergreen Media Holdings,evergreenmediaholdings.example,Retail,15,11-50,1641000.00,DE,EMEA-N,2024-09-04T18:36:06
+CO-000070,Nova Freight Solutions,novafreightsolutions.example,Media,18,11-50,3173000.00,FR,EMEA-N,2024-09-06T21:03:25
+CO-000071,Jade Logic Technologies,jadelogictechnologies.example,Logistics,24,11-50,1798000.00,AU,APAC,2024-09-07T19:18:55
+CO-000072,Dynamo Care Technologies,dynamocaretechnologies.example,Healthcare,1361,1000+,105461000.00,DE,EMEA-N,2024-09-17T09:28:12
+CO-000073,Zenith Foods Holdings,zenithfoodsholdings.example,Logistics,131,51-200,26275000.00,DE,EMEA-N,2024-09-18T16:20:30
+CO-000074,Ember Materials Group,embermaterialsgroup.example,Software,31,11-50,3262000.00,GB,EMEA-N,2024-09-18T17:49:20
+CO-000075,Juniper Pharma Holdings,juniperpharmaholdings.example,Healthcare,71,51-200,11694000.00,US,NORAM,2024-09-18T21:00:01
+CO-000076,Orchid Mobility Systems,orchidmobilitysystems.example,Education,3,1-10,280000.00,GB,EMEA-N,2024-09-19T07:39:13
+CO-000077,Redwood Care Holdings,redwoodcareholdings.example,Public Sector,17,11-50,3616000.00,IT,EMEA-S,2024-09-20T01:13:27
+CO-000078,Mosaic Foods Holdings,mosaicfoodsholdings.example,Education,13,11-50,879000.00,SG,APAC,2024-09-20T18:35:28
+CO-000079,Vertex Data Labs,vertexdatalabs.example,Media,231,201-1000,46736000.00,SE,EMEA-N,2024-09-21T04:06:17
+CO-000080,Union Materials Partners,unionmaterialspartners.example,Energy,4,1-10,429000.00,US,NORAM,2024-09-21T12:03:14
+CO-000081,Dynamo Data Technologies,dynamodatatechnologies.example,Logistics,11,11-50,2130000.00,BR,LATAM,2024-09-21T23:19:30
+CO-000082,Orchid Works Systems,orchidworkssystems.example,Manufacturing,4,1-10,446000.00,DE,EMEA-N,2024-09-24T01:21:10
+CO-000083,Juniper Mobility Industries,junipermobilityindustries.example,Education,521,201-1000,69480000.00,DE,EMEA-N,2024-09-25T12:53:53
+CO-000084,Cobalt Data Partners,cobaltdatapartners.example,Financial Services,2570,1000+,443275000.00,US,NORAM,2024-09-26T17:30:38
+CO-000085,Evergreen Textiles Partners,evergreentextilespartners.example,Retail,67,51-200,9928000.00,US,NORAM,2024-10-03T01:46:05
+CO-000086,Northwind Dynamics Industries,northwinddynamicsindustries.example,Retail,1296,1000+,115676000.00,JP,APAC,2024-10-03T13:39:30
+CO-000087,Willow Data Systems,willowdatasystems.example,Public Sector,14,11-50,4873000.00,CA,NORAM,2024-10-10T02:12:44
+CO-000088,Lagoon Cyber Technologies,lagooncybertechnologies.example,Public Sector,87,51-200,12440000.00,US,NORAM,2024-10-11T07:01:33
+CO-000089,Nimbus Cyber Solutions,nimbuscybersolutions.example,Logistics,86,51-200,26288000.00,US,NORAM,2024-10-11T07:57:21
+CO-000090,Redwood Textiles Group,redwoodtextilesgroup.example,Financial Services,248,201-1000,44018000.00,FR,EMEA-N,2024-10-13T15:11:44
+CO-000091,Pinnacle Logistics Solutions,pinnaclelogisticssolutions.example,Financial Services,74,51-200,17289000.00,IN,INDIA,2024-10-21T02:05:43
+CO-000092,Mosaic Robotics Solutions,mosaicroboticssolutions.example,Manufacturing,1223,1000+,198076000.00,FR,EMEA-N,2024-10-21T21:35:54
+CO-000093,Quartz Cloud Systems,quartzcloudsystems.example,Media,19,11-50,8527000.00,IN,INDIA,2024-10-23T09:41:46
+CO-000094,Ivory Data Partners,ivorydatapartners.example,Media,5,1-10,280000.00,BR,LATAM,2024-10-26T11:48:11
+CO-000095,Falcon Dynamics Systems,falcondynamicssystems.example,Manufacturing,226,201-1000,52326000.00,SE,EMEA-N,2024-10-28T21:09:44
+CO-000096,Willow Health Labs,willowhealthlabs.example,Retail,1,1-10,55000.00,GB,EMEA-N,2024-11-02T10:03:22
+CO-000097,Dynamo Dynamics Group,dynamodynamicsgroup.example,Manufacturing,21,11-50,2483000.00,IN,INDIA,2024-11-03T19:33:50
+CO-000098,Alpine Works Solutions,alpineworkssolutions.example,Software,137,51-200,29003000.00,MX,LATAM,2024-11-04T23:55:48
+CO-000099,Crescent Cyber Technologies,crescentcybertechnologies.example,Energy,36,11-50,3825000.00,ES,EMEA-S,2024-11-08T05:01:19
+CO-000100,Lagoon Security Industries,lagoonsecurityindustries.example,Retail,1154,1000+,143576000.00,DE,EMEA-N,2024-11-09T03:18:42
+CO-000101,Northwind Cloud Group,northwindcloudgroup.example,Energy,3,1-10,275000.00,CA,NORAM,2024-11-11T21:56:13
+CO-000102,Granite Data Technologies,granitedatatechnologies.example,Software,57,51-200,11634000.00,IT,EMEA-S,2024-11-12T01:58:02
+CO-000103,Nova Finance Group,novafinancegroup.example,Manufacturing,9,1-10,1921000.00,US,NORAM,2024-11-12T05:13:24
+CO-000104,Cobalt Capital Industries,cobaltcapitalindustries.example,Healthcare,37,11-50,5359000.00,IE,EMEA-N,2024-11-13T06:48:17
+CO-000105,Jade Learning Solutions,jadelearningsolutions.example,Financial Services,281,201-1000,64278000.00,GB,EMEA-N,2024-11-16T13:29:02
+CO-000106,Ivory Retail Solutions,ivoryretailsolutions.example,Software,92,51-200,6283000.00,US,NORAM,2024-11-22T22:42:12
+CO-000107,Lumen Mobility Labs,lumenmobilitylabs.example,Media,14,11-50,821000.00,ZA,EMEA-S,2024-11-26T06:31:00
+CO-000108,Ember Media Systems,embermediasystems.example,Financial Services,76,51-200,11868000.00,IN,INDIA,2024-12-02T00:06:02
+CO-000109,Summit Pharma Solutions,summitpharmasolutions.example,Media,113,51-200,11248000.00,DE,EMEA-N,2024-12-06T20:59:34
+CO-000110,Silverline Health Group,silverlinehealthgroup.example,Energy,26,11-50,2182000.00,GB,EMEA-N,2024-12-09T15:22:20
+CO-000111,Willow Logic Labs,willowlogiclabs.example,Healthcare,1512,1000+,140891000.00,ES,EMEA-S,2024-12-10T04:03:53
+CO-000112,Tidewater Freight Technologies,tidewaterfreighttechnologies.example,Healthcare,3250,1000+,699112000.00,BR,LATAM,2024-12-12T09:43:15
+CO-000113,Vertex Cyber Group,vertexcybergroup.example,Manufacturing,45,11-50,4395000.00,GB,EMEA-N,2024-12-15T07:17:01
+CO-000114,Silverline Care Industries,silverlinecareindustries.example,Financial Services,1,1-10,183000.00,IT,EMEA-S,2024-12-17T01:53:11
+CO-000115,Quartz Security Holdings,quartzsecurityholdings.example,Financial Services,98,51-200,9996000.00,US,NORAM,2024-12-17T03:49:56
+CO-000116,Union Dynamics Group,uniondynamicsgroup.example,Retail,18,11-50,3409000.00,MX,LATAM,2024-12-18T18:35:05
+CO-000117,Nimbus Security Holdings,nimbussecurityholdings.example,Manufacturing,1322,1000+,110380000.00,US,NORAM,2024-12-24T02:47:14
+CO-000118,Indigo Finance Partners,indigofinancepartners.example,Retail,167,51-200,17987000.00,CA,NORAM,2024-12-27T19:20:38
+CO-000119,Indigo Security Group,indigosecuritygroup.example,Media,111,51-200,12643000.00,US,NORAM,2025-01-05T21:58:28
+CO-000120,Summit Cyber Partners,summitcyberpartners.example,Software,99,51-200,19919000.00,GB,EMEA-N,2025-01-08T11:17:06
+CO-000121,Riverstone Capital Labs,riverstonecapitallabs.example,Software,304,201-1000,64462000.00,IN,INDIA,2025-01-09T04:58:10
+CO-000122,Beacon Cyber Partners,beaconcyberpartners.example,Energy,1178,1000+,274262000.00,AE,EMEA-S,2025-01-14T15:02:18
+CO-000123,Orchid Motors Solutions,orchidmotorssolutions.example,Education,1,1-10,301000.00,US,NORAM,2025-01-14T18:24:36
+CO-000124,Evergreen Foods Group,evergreenfoodsgroup.example,Software,264,201-1000,21770000.00,US,NORAM,2025-01-15T20:35:35
+CO-000125,Juniper Networks Group,junipernetworksgroup.example,Software,1303,1000+,437584000.00,CA,NORAM,2025-01-19T14:24:20
+CO-000126,Mosaic Works Group,mosaicworksgroup.example,Education,2,1-10,447000.00,MX,LATAM,2025-01-20T10:12:16
+CO-000127,Granite Motors Group,granitemotorsgroup.example,Software,245,201-1000,33799000.00,US,NORAM,2025-01-23T20:57:32
+CO-000128,Pinnacle Cyber Industries,pinnaclecyberindustries.example,Education,154,51-200,24882000.00,ZA,EMEA-S,2025-01-25T13:58:00
+CO-000129,Orchid Learning Systems,orchidlearningsystems.example,Software,21,11-50,1885000.00,US,NORAM,2025-01-25T18:19:40
+CO-000130,Alpine Digital Systems,alpinedigitalsystems.example,Manufacturing,2,1-10,412000.00,US,NORAM,2025-01-29T11:04:04
+CO-000131,Ironbridge Energy Industries,ironbridgeenergyindustries.example,Software,2153,1000+,387897000.00,GB,EMEA-N,2025-01-31T20:16:26
+CO-000132,Juniper Cyber Technologies,junipercybertechnologies.example,Software,615,201-1000,62209000.00,US,NORAM,2025-02-07T02:40:45
+CO-000133,Lagoon Insight Industries,lagooninsightindustries.example,Healthcare,349,201-1000,62621000.00,BR,LATAM,2025-02-07T17:34:27
+CO-000134,Cobalt Dynamics Holdings,cobaltdynamicsholdings.example,Manufacturing,128,51-200,9124000.00,US,NORAM,2025-02-12T22:08:19
+CO-000135,Mosaic Data Group,mosaicdatagroup.example,Manufacturing,4,1-10,266000.00,US,NORAM,2025-02-14T03:08:14
+CO-000136,Kestrel Mobility Industries,kestrelmobilityindustries.example,Software,10,1-10,2183000.00,GB,EMEA-N,2025-02-14T16:20:14
+CO-000137,Northwind Power Solutions,northwindpowersolutions.example,Software,17,11-50,5996000.00,MX,LATAM,2025-02-15T11:59:50
+CO-000138,Evergreen Freight Partners,evergreenfreightpartners.example,Manufacturing,18,11-50,2003000.00,CA,NORAM,2025-02-18T13:19:40
+CO-000139,Horizon Capital Industries,horizoncapitalindustries.example,Manufacturing,37,11-50,5625000.00,ZA,EMEA-S,2025-02-21T06:37:33
+CO-000140,Tidewater Finance Industries,tidewaterfinanceindustries.example,Media,18,11-50,3166000.00,MX,LATAM,2025-02-23T01:36:09
+CO-000141,Riverstone Pharma Labs,riverstonepharmalabs.example,Healthcare,181,51-200,24423000.00,ES,EMEA-S,2025-03-02T14:57:11
+CO-000142,Evergreen Works Holdings,evergreenworksholdings.example,Education,20,11-50,1850000.00,ES,EMEA-S,2025-03-14T18:47:41
+CO-000143,Quartz Cyber Systems,quartzcybersystems.example,Healthcare,163,51-200,23915000.00,US,NORAM,2025-03-16T07:49:27
+CO-000144,Glacier Retail Labs,glacierretaillabs.example,Healthcare,35,11-50,4975000.00,US,NORAM,2025-03-20T03:48:48
+CO-000145,Pinnacle Logistics Labs,pinnaclelogisticslabs.example,Financial Services,170,51-200,14600000.00,IN,INDIA,2025-03-21T05:30:19
+CO-000146,Lagoon Mobility Labs,lagoonmobilitylabs.example,Manufacturing,332,201-1000,82542000.00,US,NORAM,2025-03-29T15:58:19
+CO-000147,Harbor Motors Systems,harbormotorssystems.example,Public Sector,42,11-50,5864000.00,IN,INDIA,2025-04-04T06:46:15
+CO-000148,Mosaic Power Group,mosaicpowergroup.example,Software,700,201-1000,98316000.00,AE,EMEA-S,2025-04-04T19:46:14
+CO-000149,Evergreen Power Solutions,evergreenpowersolutions.example,Healthcare,31,11-50,5930000.00,GB,EMEA-N,2025-04-08T10:26:43
+CO-000150,Granite Networks Labs,granitenetworkslabs.example,Logistics,302,201-1000,40427000.00,ES,EMEA-S,2025-04-11T10:38:46
+CO-000151,Union Media Group,unionmediagroup.example,Education,6,1-10,1545000.00,US,NORAM,2025-04-14T19:47:12
+CO-000152,Orchid Software Solutions,orchidsoftwaresolutions.example,Education,358,201-1000,96607000.00,GB,EMEA-N,2025-04-16T11:13:30
+CO-000153,Lagoon Pharma Industries,lagoonpharmaindustries.example,Software,32,11-50,6746000.00,SE,EMEA-N,2025-04-17T04:21:27
+CO-000154,Riverstone Works Group,riverstoneworksgroup.example,Media,1864,1000+,366596000.00,IN,INDIA,2025-04-29T00:04:53
+CO-000155,Alpine Logistics Industries,alpinelogisticsindustries.example,Public Sector,21,11-50,10388000.00,ES,EMEA-S,2025-05-01T03:29:49
+CO-000156,Tidewater Textiles Labs,tidewatertextileslabs.example,Manufacturing,21,11-50,2772000.00,CO,LATAM,2025-05-01T20:28:03
+CO-000157,Riverstone Retail Labs,riverstoneretaillabs.example,Education,24,11-50,8878000.00,CA,NORAM,2025-05-07T08:48:32
+CO-000158,Lumen Software Partners,lumensoftwarepartners.example,Software,2,1-10,169000.00,AE,EMEA-S,2025-05-11T00:24:24
+CO-000159,Northwind Learning Solutions,northwindlearningsolutions.example,Education,50,11-50,5024000.00,NL,EMEA-N,2025-05-13T21:42:44
+CO-000160,Beacon Textiles Industries,beacontextilesindustries.example,Retail,147,51-200,35904000.00,CA,NORAM,2025-05-17T11:25:58
+CO-000161,Pinnacle Learning Solutions,pinnaclelearningsolutions.example,Financial Services,971,201-1000,297636000.00,IN,INDIA,2025-05-19T21:32:37
+CO-000162,Riverstone Digital Holdings,riverstonedigitalholdings.example,Software,148,51-200,26496000.00,IN,INDIA,2025-05-21T19:38:51
+CO-000163,Glacier Pharma Partners,glacierpharmapartners.example,Public Sector,1768,1000+,285028000.00,US,NORAM,2025-05-22T02:45:24
+CO-000164,Indigo Energy Partners,indigoenergypartners.example,Manufacturing,13,11-50,939000.00,US,NORAM,2025-05-22T05:25:53
+CO-000165,Keystone Freight Industries,keystonefreightindustries.example,Healthcare,49,11-50,7708000.00,FR,EMEA-N,2025-05-24T10:49:43
+CO-000166,Pinnacle Health Group,pinnaclehealthgroup.example,Public Sector,21,11-50,2928000.00,US,NORAM,2025-05-26T07:52:47
+CO-000167,Horizon Data Technologies,horizondatatechnologies.example,Retail,43,11-50,2582000.00,BR,LATAM,2025-05-27T03:41:16
+CO-000168,Nova Cyber Group,novacybergroup.example,Retail,252,201-1000,25740000.00,PT,EMEA-S,2025-06-01T20:52:09
+CO-000169,Alpine Foods Technologies,alpinefoodstechnologies.example,Software,68,51-200,10127000.00,IN,INDIA,2025-06-05T21:17:06
+CO-000170,Granite Freight Systems,granitefreightsystems.example,Retail,153,51-200,10882000.00,US,NORAM,2025-06-07T20:30:49
+CO-000171,Glacier Networks Solutions,glaciernetworkssolutions.example,Software,52,51-200,7664000.00,SE,EMEA-N,2025-06-08T20:38:17
+CO-000172,Summit Works Holdings,summitworksholdings.example,Financial Services,1,1-10,96000.00,IT,EMEA-S,2025-06-10T12:27:17
+CO-000173,Union Capital Labs,unioncapitallabs.example,Manufacturing,1,1-10,75000.00,AE,EMEA-S,2025-06-16T13:01:37
+CO-000174,Union Textiles Technologies,uniontextilestechnologies.example,Media,1842,1000+,361229000.00,BR,LATAM,2025-06-17T12:42:35
+CO-000175,Ironbridge Mobility Solutions,ironbridgemobilitysolutions.example,Retail,1,1-10,65000.00,FR,EMEA-N,2025-06-22T10:13:55
+CO-000176,Alpine Logistics Technologies,alpinelogisticstechnologies.example,Energy,644,201-1000,64813000.00,BR,LATAM,2025-06-29T21:16:47
+CO-000177,Evergreen Power Partners,evergreenpowerpartners.example,Logistics,31,11-50,7468000.00,US,NORAM,2025-07-06T14:46:31
+CO-000178,Falcon Security Solutions,falconsecuritysolutions.example,Manufacturing,30,11-50,6591000.00,NL,EMEA-N,2025-07-12T18:26:03
+CO-000179,Evergreen Foods Solutions,evergreenfoodssolutions.example,Education,281,201-1000,38588000.00,DE,EMEA-N,2025-07-13T17:36:11
+CO-000180,Nimbus Learning Systems,nimbuslearningsystems.example,Logistics,1,1-10,134000.00,US,NORAM,2025-07-16T19:22:20
+CO-000181,Lumen Media Industries,lumenmediaindustries.example,Software,312,201-1000,94191000.00,IT,EMEA-S,2025-07-18T10:49:10
+CO-000182,Cobalt Learning Systems,cobaltlearningsystems.example,Logistics,480,201-1000,39170000.00,US,NORAM,2025-07-22T10:13:29
+CO-000183,Granite Foods Group,granitefoodsgroup.example,Energy,26,11-50,3459000.00,IN,INDIA,2025-07-23T04:32:44
+CO-000184,Union Care Technologies,unioncaretechnologies.example,Energy,111,51-200,19885000.00,AU,APAC,2025-07-23T19:36:54
+CO-000185,Cobalt Logistics Group,cobaltlogisticsgroup.example,Media,145,51-200,18282000.00,JP,APAC,2025-07-29T23:11:51
+CO-000186,Redwood Cloud Labs,redwoodcloudlabs.example,Energy,2,1-10,213000.00,US,NORAM,2025-07-30T08:15:13
+CO-000187,Cobalt Insight Solutions,cobaltinsightsolutions.example,Energy,1,1-10,72000.00,US,NORAM,2025-07-31T03:55:47
+CO-000188,Evergreen Dynamics Holdings,evergreendynamicsholdings.example,Healthcare,609,201-1000,106055000.00,IT,EMEA-S,2025-08-02T02:21:21
+CO-000189,Northwind Security Holdings,northwindsecurityholdings.example,Financial Services,1,1-10,93000.00,US,NORAM,2025-08-03T03:57:25
+CO-000190,Frontier Analytics Industries,frontieranalyticsindustries.example,Software,251,201-1000,70092000.00,IT,EMEA-S,2025-08-03T11:11:54
+CO-000191,Willow Finance Labs,willowfinancelabs.example,Public Sector,14,11-50,3231000.00,DE,EMEA-N,2025-08-04T16:13:16
+CO-000192,Falcon Networks Systems,falconnetworkssystems.example,Software,275,201-1000,35129000.00,BR,LATAM,2025-08-06T14:27:22
+CO-000193,Northwind Finance Technologies,northwindfinancetechnologies.example,Logistics,2005,1000+,276379000.00,IT,EMEA-S,2025-08-08T23:47:57
+CO-000194,Orchid Finance Industries,orchidfinanceindustries.example,Software,8,1-10,1259000.00,US,NORAM,2025-08-17T03:56:29
+CO-000195,Dynamo Care Systems,dynamocaresystems.example,Public Sector,40,11-50,2386000.00,DE,EMEA-N,2025-08-17T11:25:41
+CO-000196,Ivory Works Group,ivoryworksgroup.example,Healthcare,32,11-50,3534000.00,BR,LATAM,2025-08-18T12:35:46
+CO-000197,Willow Motors Technologies,willowmotorstechnologies.example,Software,26,11-50,4307000.00,GB,EMEA-N,2025-08-19T18:30:42
+CO-000198,Quartz Care Partners,quartzcarepartners.example,Financial Services,1756,1000+,157900000.00,BR,LATAM,2025-08-26T19:47:32
+CO-000199,Cobalt Networks Holdings,cobaltnetworksholdings.example,Media,1,1-10,96000.00,IN,INDIA,2025-08-27T07:02:23
+CO-000200,Alpine Textiles Systems,alpinetextilessystems.example,Retail,14,11-50,4182000.00,CO,LATAM,2025-08-28T01:49:05
+CO-000201,Horizon Pharma Holdings,horizonpharmaholdings.example,Healthcare,16,11-50,3108000.00,US,NORAM,2025-08-30T10:01:50
+CO-000202,Zenith Networks Systems,zenithnetworkssystems.example,Manufacturing,5,1-10,669000.00,DE,EMEA-N,2025-09-03T13:42:21
+CO-000203,Nimbus Cloud Industries,nimbuscloudindustries.example,Manufacturing,5,1-10,508000.00,DE,EMEA-N,2025-09-03T21:46:12
+CO-000204,Lagoon Care Group,lagooncaregroup.example,Financial Services,17,11-50,4231000.00,GB,EMEA-N,2025-09-12T07:34:22
+CO-000205,Keystone Energy Partners,keystoneenergypartners.example,Software,18,11-50,2541000.00,DE,EMEA-N,2025-09-13T20:51:25
+CO-000206,Nova Learning Labs,novalearninglabs.example,Financial Services,12,11-50,1426000.00,US,NORAM,2025-09-16T19:55:45
+CO-000207,Tidewater Digital Labs,tidewaterdigitallabs.example,Financial Services,160,51-200,39956000.00,ES,EMEA-S,2025-09-19T20:15:00
+CO-000208,Quartz Retail Industries,quartzretailindustries.example,Healthcare,23,11-50,2664000.00,US,NORAM,2025-09-26T11:48:13
+CO-000209,Ember Software Technologies,embersoftwaretechnologies.example,Public Sector,3,1-10,326000.00,ES,EMEA-S,2025-10-05T00:07:28
+CO-000210,Vertex Logic Holdings,vertexlogicholdings.example,Public Sector,8,1-10,1804000.00,SE,EMEA-N,2025-10-08T21:03:16
+CO-000211,Frontier Logic Solutions,frontierlogicsolutions.example,Software,5,1-10,1359000.00,MX,LATAM,2025-10-09T13:11:05
+CO-000212,Silverline Data Systems,silverlinedatasystems.example,Software,127,51-200,15131000.00,IN,INDIA,2025-10-09T14:45:53
+CO-000213,Zenith Energy Partners,zenithenergypartners.example,Manufacturing,1074,1000+,69155000.00,AE,EMEA-S,2025-10-13T00:46:49
+CO-000214,Meridian Networks Group,meridiannetworksgroup.example,Logistics,135,51-200,14279000.00,MX,LATAM,2025-10-15T04:44:28
+CO-000215,Orchid Capital Solutions,orchidcapitalsolutions.example,Energy,70,51-200,9818000.00,AU,APAC,2025-10-17T09:23:51
+CO-000216,Ivory Power Group,ivorypowergroup.example,Manufacturing,95,51-200,21767000.00,US,NORAM,2025-10-19T19:48:23
+CO-000217,Bluepeak Foods Labs,bluepeakfoodslabs.example,Energy,12,11-50,1987000.00,AE,EMEA-S,2025-10-21T05:03:54
+CO-000218,Redwood Data Technologies,redwooddatatechnologies.example,Manufacturing,2,1-10,304000.00,US,NORAM,2025-10-21T10:29:19
+CO-000219,Horizon Mobility Labs,horizonmobilitylabs.example,Retail,1412,1000+,156044000.00,US,NORAM,2025-10-22T14:04:56
+CO-000220,Juniper Care Labs,junipercarelabs.example,Retail,39,11-50,3517000.00,GB,EMEA-N,2025-10-25T11:36:01
+CO-000221,Nimbus Pharma Labs,nimbuspharmalabs.example,Software,40,11-50,3121000.00,DE,EMEA-N,2025-10-25T14:59:17
+CO-000222,Frontier Power Labs,frontierpowerlabs.example,Healthcare,2,1-10,133000.00,US,NORAM,2025-10-29T02:09:13
+CO-000223,Keystone Power Technologies,keystonepowertechnologies.example,Software,323,201-1000,43849000.00,IT,EMEA-S,2025-10-31T09:44:28
+CO-000224,Glacier Finance Industries,glacierfinanceindustries.example,Retail,1,1-10,255000.00,CA,NORAM,2025-10-31T18:26:16
+CO-000225,Meridian Mobility Technologies,meridianmobilitytechnologies.example,Healthcare,97,51-200,10347000.00,US,NORAM,2025-11-01T01:51:08
+CO-000226,Silverline Power Solutions,silverlinepowersolutions.example,Logistics,1,1-10,93000.00,DE,EMEA-N,2025-11-02T13:13:07
+CO-000227,Glacier Cyber Industries,glaciercyberindustries.example,Media,9,1-10,1197000.00,IN,INDIA,2025-11-03T12:25:34
+CO-000228,Summit Digital Holdings,summitdigitalholdings.example,Financial Services,15,11-50,2335000.00,JP,APAC,2025-11-05T00:27:54
+CO-000229,Lumen Materials Holdings,lumenmaterialsholdings.example,Energy,195,51-200,29220000.00,GB,EMEA-N,2025-11-15T00:27:57
+CO-000230,Kestrel Works Labs,kestrelworkslabs.example,Education,25,11-50,2487000.00,JP,APAC,2025-11-19T12:04:43
+CO-000231,Falcon Finance Technologies,falconfinancetechnologies.example,Retail,866,201-1000,142484000.00,AR,LATAM,2025-11-22T04:22:44
+CO-000232,Zenith Data Holdings,zenithdataholdings.example,Media,78,51-200,14777000.00,ES,EMEA-S,2025-12-07T13:49:45
+CO-000233,Northwind Data Industries,northwinddataindustries.example,Software,81,51-200,4301000.00,ES,EMEA-S,2025-12-10T13:13:24
+CO-000234,Willow Capital Systems,willowcapitalsystems.example,Software,235,201-1000,67574000.00,FR,EMEA-N,2025-12-10T23:48:18
+CO-000235,Pinnacle Foods Group,pinnaclefoodsgroup.example,Media,105,51-200,11751000.00,IN,INDIA,2025-12-15T02:35:22
+CO-000236,Nova Security Holdings,novasecurityholdings.example,Manufacturing,677,201-1000,144406000.00,US,NORAM,2026-01-06T08:25:37
+CO-000237,Vertex Capital Group,vertexcapitalgroup.example,Healthcare,2,1-10,589000.00,CA,NORAM,2026-01-08T14:34:26
+CO-000238,Juniper Data Partners,juniperdatapartners.example,Public Sector,13,11-50,950000.00,US,NORAM,2026-01-11T10:45:21
+CO-000239,Alpine Freight Group,alpinefreightgroup.example,Financial Services,1,1-10,86000.00,US,NORAM,2026-01-16T19:21:52
+CO-000240,Granite Health Group,granitehealthgroup.example,Healthcare,16,11-50,1232000.00,AR,LATAM,2026-01-19T16:15:32
+CO-000241,Evergreen Logic Holdings,evergreenlogicholdings.example,Logistics,138,51-200,34492000.00,AU,APAC,2026-01-20T09:19:06
+CO-000242,Bluepeak Mobility Partners,bluepeakmobilitypartners.example,Healthcare,9,1-10,2759000.00,IN,INDIA,2026-01-23T05:27:54
+CO-000243,Indigo Health Partners,indigohealthpartners.example,Retail,85,51-200,10130000.00,ES,EMEA-S,2026-02-07T09:57:45
+CO-000244,Zenith Foods Technologies,zenithfoodstechnologies.example,Energy,2,1-10,456000.00,AU,APAC,2026-02-08T10:35:13
+CO-000245,Willow Digital Group,willowdigitalgroup.example,Financial Services,160,51-200,10996000.00,DE,EMEA-N,2026-02-10T04:07:06
+CO-000246,Ivory Robotics Industries,ivoryroboticsindustries.example,Healthcare,21,11-50,3832000.00,NL,EMEA-N,2026-02-15T15:55:02
+CO-000247,Dynamo Health Group,dynamohealthgroup.example,Public Sector,18,11-50,1646000.00,PT,EMEA-S,2026-04-07T15:00:11
+CO-000248,Kestrel Mobility Solutions,kestrelmobilitysolutions.example,Education,1,1-10,95000.00,MX,LATAM,2026-04-30T00:26:55
+CO-000249,Redwood Health Systems,redwoodhealthsystems.example,Manufacturing,21,11-50,4721000.00,IT,EMEA-S,2026-05-07T11:00:15
+CO-000250,Ironbridge Capital Technologies,ironbridgecapitaltechnologies.example,Logistics,13,11-50,3119000.00,US,NORAM,2026-07-16T19:54:02

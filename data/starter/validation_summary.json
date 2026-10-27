@@ -1,0 +1,880 @@
+{
+ "overall": "PASS",
+ "invariants_passed": 96,
+ "invariants_total": 96,
+ "detectors_matching_ground_truth": 7,
+ "detectors_total": 7,
+ "funnel": {
+  "leads": 1000,
+  "duplicate_leads": 15,
+  "master_leads": 985,
+  "scored_leads": 985,
+  "leads_with_tasks": 744,
+  "leads_with_completed_task": 678,
+  "opportunities": 150,
+  "opps_from_master_leads": 148,
+  "opps_from_duplicate_leads": 2,
+  "open": 4,
+  "won": 53,
+  "lost": 93,
+  "leads_status_converted": 148
+ },
+ "checks": [
+  {
+   "name": "Company: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Company.company_name: unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Company.domain: unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Company: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Contact: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Contact: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Campaign: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Campaign: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "SalesRep: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "SalesRep: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "RepCoverage: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "RepCoverage: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Consent: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Consent: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Lead: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Lead: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Task: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Task: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Activity: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Activity: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "ScoreRule: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "ScoreRule: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "LeadScore: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "LeadScore: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "LeadScoreComponent: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "LeadScoreComponent: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Opportunity: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Opportunity.lead_id: unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Opportunity: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "StageHistory: primary key unique",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "StageHistory: required/type/enum/pattern",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Company: IDs contiguous & zero-padded",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Contact: IDs contiguous & zero-padded",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Consent: IDs contiguous & zero-padded",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Contact.company_id -> Company.company_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Contact.duplicate_of_contact_id -> Contact.contact_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK RepCoverage.rep_id -> SalesRep.rep_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Consent.contact_id -> Contact.contact_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Lead.contact_id -> Contact.contact_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Lead.company_id -> Company.company_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Lead.campaign_id -> Campaign.campaign_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Lead.consent_id -> Consent.consent_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Lead.assigned_rep_id -> SalesRep.rep_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Lead.duplicate_of_lead_id -> Lead.lead_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Task.lead_id -> Lead.lead_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Task.rep_id -> SalesRep.rep_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Activity.lead_id -> Lead.lead_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Activity.rep_id -> SalesRep.rep_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Activity.task_id -> Task.task_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK LeadScore.lead_id -> Lead.lead_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK LeadScoreComponent.score_id -> LeadScore.score_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK LeadScoreComponent.rule_id -> ScoreRule.rule_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Opportunity.lead_id -> Lead.lead_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Opportunity.company_id -> Company.company_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Opportunity.contact_id -> Contact.contact_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK Opportunity.rep_id -> SalesRep.rep_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "FK StageHistory.opportunity_id -> Opportunity.opportunity_id",
+   "category": "foreign_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Contact.created_at >= Company.created_at",
+   "category": "date_ordering",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Contact.created_at == created_at of the contact's first lead; every contact has a lead",
+   "category": "date_ordering",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Lead.company_id == Contact.company_id",
+   "category": "referential_semantics",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Lead.territory == Company.territory",
+   "category": "derived_values",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Lead within campaign window and channel == source",
+   "category": "date_ordering",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Lead.routed_at >= created_at",
+   "category": "date_ordering",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Activity.occurred_at >= Lead.created_at",
+   "category": "date_ordering",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Activity direction/channel match type",
+   "category": "schema",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Activity IDs sequential & time-ordered per lead",
+   "category": "primary_keys",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Task due >= created, completed >= created, status/cancel_reason consistent",
+   "category": "date_ordering",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Opportunity.created_at > initial score time; >= lead.created_at",
+   "category": "date_ordering",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Opportunity company/contact/rep consistent with lead",
+   "category": "referential_semantics",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Consent timelines contiguous, non-overlapping, alternating",
+   "category": "lifecycle",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Lead.consent_id is the email consent period in force at created_at",
+   "category": "referential_semantics",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Campaign dates ordered",
+   "category": "date_ordering",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Company.employee_band == band_of(employee_count)",
+   "category": "derived_values",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Company.territory == territory(country)",
+   "category": "derived_values",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Company revenue / amounts positive",
+   "category": "derived_values",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Component points == rule.points x units",
+   "category": "arithmetic",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "LeadScore raw == sum(components); total == clamp(raw); tier from thresholds",
+   "category": "arithmetic",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Score is reproducible from source rows (features, rule version, components)",
+   "category": "reproducibility",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Every non-duplicate lead has exactly one initial score; duplicates have none",
+   "category": "derived_values",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Opportunity.current_stage/status == latest StageHistory",
+   "category": "lifecycle",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Opportunity closed_at/outcome_reason consistent with closing event",
+   "category": "lifecycle",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "StageHistory: valid transitions, starts at Qualification, times non-decreasing",
+   "category": "lifecycle",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Dedupe recomputed == stored duplicate_of_contact_id / duplicate_of_lead_id",
+   "category": "duplicates",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "No two master contacts share a normalised email",
+   "category": "duplicates",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Duplicate leads follow master rep",
+   "category": "duplicates",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Lead.status recomputed from source records",
+   "category": "derived_values",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Completed/open non-cancelled tasks had consent for their channel at due time",
+   "category": "consent",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Assigned rep is active",
+   "category": "routing",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Every lead has a rep, routed_at and a form_submit activity",
+   "category": "routing",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Initial score uses only pre-conversion data (initial scored_at < opp.created_at)",
+   "category": "leakage",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "No ground-truth/label columns in input tables",
+   "category": "leakage",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Ground truth lives in separate files",
+   "category": "leakage",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Funnel: master+duplicate leads == leads; scored == master leads",
+   "category": "funnel",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Funnel: opps from master + from duplicates == opportunities; open+won+lost == opportunities",
+   "category": "funnel",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Funnel: leads with status Converted == opportunities from master leads",
+   "category": "funnel",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "Volumes match configuration",
+   "category": "funnel",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  }
+ ],
+ "detectors": [
+  {
+   "issue_type": "duplicate_contact",
+   "expected": 15,
+   "detected": 15,
+   "missing": 0,
+   "unexpected": 0,
+   "status": "PASS",
+   "sample_unexpected": [],
+   "sample_missing": []
+  },
+  {
+   "issue_type": "duplicate_creates_duplicate_opportunity",
+   "expected": 2,
+   "detected": 2,
+   "missing": 0,
+   "unexpected": 0,
+   "status": "PASS",
+   "sample_unexpected": [],
+   "sample_missing": []
+  },
+  {
+   "issue_type": "duplicate_lead",
+   "expected": 15,
+   "detected": 15,
+   "missing": 0,
+   "unexpected": 0,
+   "status": "PASS",
+   "sample_unexpected": [],
+   "sample_missing": []
+  },
+  {
+   "issue_type": "lead_assigned_outside_territory",
+   "expected": 2,
+   "detected": 2,
+   "missing": 0,
+   "unexpected": 0,
+   "status": "PASS",
+   "sample_unexpected": [],
+   "sample_missing": []
+  },
+  {
+   "issue_type": "opted_out_lead_contacted",
+   "expected": 4,
+   "detected": 4,
+   "missing": 0,
+   "unexpected": 0,
+   "status": "PASS",
+   "sample_unexpected": [],
+   "sample_missing": []
+  },
+  {
+   "issue_type": "score_uses_post_conversion_event",
+   "expected": 3,
+   "detected": 3,
+   "missing": 0,
+   "unexpected": 0,
+   "status": "PASS",
+   "sample_unexpected": [],
+   "sample_missing": []
+  },
+  {
+   "issue_type": "stage_history_gap",
+   "expected": 2,
+   "detected": 2,
+   "missing": 0,
+   "unexpected": 0,
+   "status": "PASS",
+   "sample_unexpected": [],
+   "sample_missing": []
+  }
+ ],
+ "row_counts": {
+  "Company": 250,
+  "Contact": 500,
+  "Campaign": 34,
+  "SalesRep": 41,
+  "RepCoverage": 72,
+  "Consent": 764,
+  "Lead": 1000,
+  "Task": 1122,
+  "Activity": 19724,
+  "ScoreRule": 46,
+  "LeadScore": 988,
+  "LeadScoreComponent": 5939,
+  "Opportunity": 150,
+  "StageHistory": 579
+ }
+}
