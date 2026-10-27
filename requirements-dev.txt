@@ -1,1 +1,2 @@
 pytest>=7
+playwright>=1.40   # optional: real-browser UI tests (then: playwright install chromium); tests skip if absent
