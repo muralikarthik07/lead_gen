@@ -41,7 +41,7 @@ SR-v2-016,2,intent,source,eq,organic_search,4,,2026-06-01T00:00:00,,Source: orga
 SR-v2-017,2,intent,source,eq,content_download,2,,2026-06-01T00:00:00,,Source: content syndication
 SR-v2-018,2,intent,demo_requests,gte,1,25,,2026-06-01T00:00:00,,Requested a demo
 SR-v2-019,2,intent,pricing_visits,per_unit,1,5,2,2026-06-01T00:00:00,,"Pricing page visits (5 each, max 2)"
-SR-v2-020,2,engagement,email_clicks,per_unit,1,3,4,2026-06-01T00:00:00,,"Email clicks (2 each, max 5)"
-SR-v2-021,2,engagement,web_visits,per_unit,1,1,8,2026-06-01T00:00:00,,"Web visits (1 each, max 10)"
+SR-v2-020,2,engagement,email_clicks,per_unit,1,3,4,2026-06-01T00:00:00,,"Email clicks (3 each, max 4)"
+SR-v2-021,2,engagement,web_visits,per_unit,1,1,8,2026-06-01T00:00:00,,"Web visits (1 each, max 8)"
 SR-v2-022,2,engagement,recent_inbound_7d,eq,1,5,,2026-06-01T00:00:00,,Inbound engagement in the 7 days before scoring
 SR-v2-023,2,engagement,no_inbound_activity,eq,1,-5,,2026-06-01T00:00:00,,No inbound engagement at all

@@ -1,7 +1,7 @@
 {
  "overall": "PASS",
- "invariants_passed": 96,
- "invariants_total": 96,
+ "invariants_passed": 97,
+ "invariants_total": 97,
  "detectors_matching_ground_truth": 7,
  "detectors_total": 7,
  "funnel": {
@@ -614,6 +614,14 @@
   },
   {
    "name": "Company revenue / amounts positive",
+   "category": "derived_values",
+   "status": "PASS",
+   "violations": 0,
+   "sample": [],
+   "note": ""
+  },
+  {
+   "name": "ScoreRule description states its own points/cap (per-unit rules)",
    "category": "derived_values",
    "status": "PASS",
    "violations": 0,

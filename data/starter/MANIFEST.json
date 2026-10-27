@@ -62,8 +62,8 @@
   },
   "csv/score_rule.csv": {
    "rows": 46,
-   "sha256": "71e39bf4d6f6a29c9be7b762f19db90f8c5240c5cc84a024daf286e8d16b3572",
-   "bytes": 4699
+   "sha256": "abe48628018c265ac35f827d531f4af939e66136f65b2fdd351b8e95b254552c",
+   "bytes": 4698
   },
   "csv/stage_history.csv": {
    "rows": 579,
@@ -127,18 +127,18 @@
   },
   "sql/seed.sql": {
    "rows": null,
-   "sha256": "9b9f806567aca16f01ea55b01d9df3fe96df30df530c98e42388fc15691318b9",
-   "bytes": 4258045
+   "sha256": "b813cae0fb68d59569b99d691264dd41ee616257c8789ae1c279cc513a2d5caa",
+   "bytes": 4258044
   },
   "validation_summary.json": {
    "rows": null,
-   "sha256": "f3899b71b83a62be722121963feab003437f67274ea51d8e22a54a755a092a8f",
-   "bytes": 18445
+   "sha256": "812566981f64f641a3cd0935f1987e3a7b134aeb97dabd0f59847d52e2f7c60f",
+   "bytes": 18638
   },
   "validation_summary.md": {
    "rows": null,
-   "sha256": "ae56bdb54d72db148e3586c2b12dd0b21493306101eb6656a056eb686237bf02",
-   "bytes": 8301
+   "sha256": "306ff01418102d34f38d751a12215a0ab51e45d75141dc098679077ce39af214",
+   "bytes": 8398
   }
  }
 }

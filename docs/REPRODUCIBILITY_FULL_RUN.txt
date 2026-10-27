@@ -11,7 +11,7 @@ csv/lead_score_component.csv                    117130  e95820d9fcfc0f01  OK
 csv/opportunity.csv                               3000  6b01b2b7e92a57ef  OK
 csv/rep_coverage.csv                                72  e162ba3d11ba5a0e  OK
 csv/sales_rep.csv                                   41  fc3a5862cb54b916  OK
-csv/score_rule.csv                                  46  71e39bf4d6f6a29c  OK
+csv/score_rule.csv                                  46  abe48628018c265a  OK
 csv/stage_history.csv                            11971  4cf1ead84e5ff1f7  OK
 csv/task.csv                                     20944  9e68a889f6f1fdae  OK
 evaluation_report.json                               -  0121eec73ae07abd  OK
@@ -31,14 +31,14 @@ json/lead_score_component.json                       -  c24a8af7c085c046  OK
 json/opportunity.json                                -  b7fa653c9181b900  OK
 json/rep_coverage.json                               -  b9da9ddf36fe0278  OK
 json/sales_rep.json                                  -  94286758c8ce9122  OK
-json/score_rule.json                                 -  fdf013db82a740bc  OK
+json/score_rule.json                                 -  4ab0f27b4e0aac26  OK
 json/stage_history.json                              -  11899a3355dde58a  OK
 json/task.json                                       -  82499cc156da8154  OK
 run_metadata.json                                    -  0b9b2acb8296b3fc  OK
 schema/data_dictionary.json                          -  58ea33141012ff31  OK
 schema/data_dictionary.md                            -  7a9c6eb130127a2c  OK
 schema/schema.sql                                    -  a052045f64dbced4  OK
-sql/seed.sql                                         -  ce4c69aefd16ce48  OK
-validation_summary.json                              -  f0ab2a0a3885f807  OK
-validation_summary.md                                -  fc695d64ebfd04fe  OK
+sql/seed.sql                                         -  00ee4e39526863c2  OK
+validation_summary.json                              -  15730cd16acbf89a  OK
+validation_summary.md                                -  fffa91ba847a3f5d  OK
 REPRODUCIBLE

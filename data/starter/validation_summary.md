@@ -1,6 +1,6 @@
 # Validation summary: **PASS**
 
-Invariants: 96/96 pass. Injected-anomaly detectors matching ground truth: 7/7.
+Invariants: 97/97 pass. Injected-anomaly detectors matching ground truth: 7/7.
 
 ## Row counts
 
@@ -126,6 +126,7 @@ Invariants: 96/96 pass. Injected-anomaly detectors matching ground truth: 7/7.
 | derived_values | Company.employee_band == band_of(employee_count) | 0 | PASS |
 | derived_values | Company.territory == territory(country) | 0 | PASS |
 | derived_values | Company revenue / amounts positive | 0 | PASS |
+| derived_values | ScoreRule description states its own points/cap (per-unit rules) | 0 | PASS |
 | arithmetic | Component points == rule.points x units | 0 | PASS |
 | arithmetic | LeadScore raw == sum(components); total == clamp(raw); tier from thresholds | 0 | PASS |
 | reproducibility | Score is reproducible from source rows (features, rule version, components) | 0 | PASS |

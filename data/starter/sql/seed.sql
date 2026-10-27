@@ -29662,8 +29662,8 @@ INSERT INTO "ScoreRule" VALUES('SR-v2-016',2,'intent','source','eq','organic_sea
 INSERT INTO "ScoreRule" VALUES('SR-v2-017',2,'intent','source','eq','content_download',2,NULL,'2026-06-01T00:00:00',NULL,'Source: content syndication');
 INSERT INTO "ScoreRule" VALUES('SR-v2-018',2,'intent','demo_requests','gte','1',25,NULL,'2026-06-01T00:00:00',NULL,'Requested a demo');
 INSERT INTO "ScoreRule" VALUES('SR-v2-019',2,'intent','pricing_visits','per_unit','1',5,2,'2026-06-01T00:00:00',NULL,'Pricing page visits (5 each, max 2)');
-INSERT INTO "ScoreRule" VALUES('SR-v2-020',2,'engagement','email_clicks','per_unit','1',3,4,'2026-06-01T00:00:00',NULL,'Email clicks (2 each, max 5)');
-INSERT INTO "ScoreRule" VALUES('SR-v2-021',2,'engagement','web_visits','per_unit','1',1,8,'2026-06-01T00:00:00',NULL,'Web visits (1 each, max 10)');
+INSERT INTO "ScoreRule" VALUES('SR-v2-020',2,'engagement','email_clicks','per_unit','1',3,4,'2026-06-01T00:00:00',NULL,'Email clicks (3 each, max 4)');
+INSERT INTO "ScoreRule" VALUES('SR-v2-021',2,'engagement','web_visits','per_unit','1',1,8,'2026-06-01T00:00:00',NULL,'Web visits (1 each, max 8)');
 INSERT INTO "ScoreRule" VALUES('SR-v2-022',2,'engagement','recent_inbound_7d','eq','1',5,NULL,'2026-06-01T00:00:00',NULL,'Inbound engagement in the 7 days before scoring');
 INSERT INTO "ScoreRule" VALUES('SR-v2-023',2,'engagement','no_inbound_activity','eq','1',-5,NULL,'2026-06-01T00:00:00',NULL,'No inbound engagement at all');
 CREATE TABLE StageHistory (
