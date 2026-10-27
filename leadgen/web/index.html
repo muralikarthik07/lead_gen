@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>LeadScope · Lead scoring explorer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M8 22l5-6 4 3 7-9' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/styles.css">
+<script>try{var t=localStorage.getItem("ls.theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<div class="shell">
+  <aside class="side" aria-label="Primary">
+    <a class="brand" href="#/"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 17l5-6 4 3 7-9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>LeadScope<small>Lead scoring explorer</small></span></a>
+    <nav id="nav" class="nav"></nav>
+    <div class="dataset" id="dataset" aria-live="polite"></div>
+  </aside>
+  <div class="main">
+    <header class="top">
+      <form id="gsearch" class="search" role="search" aria-label="Search leads">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="gq" type="search" placeholder="Search leads, companies, emails…" aria-label="Search leads, companies or emails" autocomplete="off">
+      </form>
+      <div class="top-actions">
+        <button id="truth" class="switch" role="switch" aria-checked="false" aria-label="Show ground truth labels" title="Reveal the labels kept in ground_truth/ (never used as model features)">
+          <span class="knob" aria-hidden="true"></span><span>Ground truth</span>
+        </button>
+        <button id="theme" class="icon-btn" aria-label="Toggle colour theme" title="Toggle theme"></button>
+      </div>
+    </header>
+    <main id="view" tabindex="-1" aria-live="polite"></main>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/app.js"></script>
+</body>
+</html>
