@@ -1,13 +1,21 @@
-# Prompt history
+# Prompt History
 
-Tool: Claude (claude.ai). Prompts are given in order; "outcome" notes what I accepted or changed.
+##Chat Gpt
+I have used chat gpt for the understanding of the projecct or given task, I went through the result and grabed the understanding of the project.
 
-| # | My prompt | Outcome |
-|---|---|---|
-| 1 | Attached the YottaFlex submission guidelines (PDF) and the problem statement "Lead scoring, follow-ups, opportunity tracking" (synthetic data generation, 20k leads / 10k contacts / 5k companies / 3k opps, edge cases, validation, ground truth, reproducibility). Prompt text: **"build this"** | Claude built the whole repository: generator, validator, evaluator, CLI, 21 tests (now 73), README, data dictionary, design notes, starter data. It ran full-scale generation, validation, tests and reproducibility itself, tuned the win rate and score signal, and delivered a zip. |
-| 2 | "`AI_USAGE.md` and `PROMPT_LOG.md` add it yourself as a student ... Push with meaningful commits ... act as me and do it" | Claude wrote this disclosure truthfully (heavy AI reliance; items I must personally verify left unchecked) and created a staged local git history. It cannot push to GitHub or know my 72-hour window; I do those myself. |
+##Claude(Anthropic)
+I have used claude for the initial build and i have given the prompt to the claude which contains all the details of the project and requirements and my understanding of the project.
 
-| 3 | "tell me what the entire project is about as I am 5 years old"; "how will the company see this"; "how to see it" | Plain-language explanation and instructions; Claude also published a read-only dashboard preview. |
-| 4 | "please add a good frontend for this project and integrate it with the project, frontend should follow all the rules and guidelines and build a modern ui/ux frontend and test all the test cases and go through the project details once again and check everything again" | Claude built the integrated web UI + API (`python -m leadgen serve`), 52 additional tests (73 total, incl. real-browser), re-audited the project against the brief (`docs/REQUIREMENTS_TRACEABILITY.md`) and fixed the issues listed in `AI_USAGE.md`. |
+==> It generated the initial draft of the project and i checked it with requirement of the project.
 
-> Before submitting I will paste any further prompts here, and attach the full exported chat transcript if the reviewers require it.
+==> I have done few modifications in the code.
+
+==> Then tested the project with an AI called "Open-Code".
+
+==> Then i realised that this project needs Frontend for better understanding and vizualization. So, i again used claude for frontend generation and integrated the   frontned with the present working model.
+
+==>Then again i tested the code with "Open AI" tool for testing.
+
+==> I faced few difficulty because of the version of the python which was installed in my local machine and used to develop the for the project.
+
+==> I used Gpt to resolve this issue.

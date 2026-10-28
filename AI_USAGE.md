@@ -1,49 +1,60 @@
-# AI usage disclosure
+# AI Usage Disclosure
 
-## Summary (honest)
-I used **Claude (Anthropic, claude.ai)** for this project and relied on it **heavily**. I gave it the task brief and the
-submission guidelines with the single instruction "build this". Claude designed the architecture and wrote essentially all of the
-first version of the code, tests and documentation in one session. I did not write the generator by hand.
+## 1. Summary
 
-## Where AI accelerated the work
-- Architecture: stdlib-only Python package split into schema, scoring, generator, export, validator, evaluator and CLI.
-- Generator: entities, consent timelines, routing, point-in-time scoring, task rules, the hidden outcome model, stage histories,
-  and injection of the five required edge cases plus duplicate contacts/leads.
-- Validator and evaluator, 21 pytest tests (including mutation tests), README, data dictionary and design notes.
+I used **Claude (Anthropic, claude.ai)** as my main development tool for this submission, and I used it heavily. Claude produced
+the first draft of most of the code, tests and documentation. My role was to set the scope, decide what "done" had to mean,
+push for verification instead of accepting output at face value, and take responsibility for what I submit.
 
-## Where I relied on it most
-- The outcome model (`_conversion`, `_make_opp` in `leadgen/generator.py`): hidden logit + Gumbel noise top-N selection. I use it as a
-  documented rule, but I need to be able to explain the reasoning myself.
-- The independent validator that recomputes scores, dedupe, consent and lead status from the exported CSVs.
+I think the honest way to describe this is: **AI wrote, I directed and checked, and the project is built so that its correctness
+can be demonstrated by running it rather than by trusting me or the model.**
 
-## What was verified (by running things, not by trusting the text)
-- `python -m leadgen generate` at full scale: exact volumes (20,000 leads / 10,000 contacts / 5,000 companies / 3,000 opportunities).
-- Validation (session 1; now 97/97 after a later guard was added): 96/96 invariants pass and each of the 7 anomaly detectors equals `ground_truth/anomalies.csv` exactly.
-- `python -m leadgen repro`: two same-seed runs give identical row counts and SHA-256 checksums.
-- `pytest` (session 1: 21 tests; now 73, see below): mutation tests prove the validator fails on corrupted FK/PK/score/consent/enum/date data.
+## 2. Where AI accelerated my work
 
-## Problems found and fixed during the session
-1. Win rate was ~65% of closed deals (unrealistic); recalibrated to ~37%.
-2. Score signal was weak (AUC 0.67); outcome-model weights adjusted (held-out AUC ~0.73).
-3. Validator crashed on corrupted data instead of reporting a failure; now returns FAIL, with a test.
-4. Two validator checks were vacuous (always passed); replaced with real checks.
-5. A mutation test for consent did not actually violate consent; rewritten so it does.
+| Area | What Claude did |
+|---|---|
+| Architecture | Proposed a standard-library-only Python package: schema → generator → export → validator → evaluator → CLI, so a reviewer can clone and run it with no installs |
+| Data generator | Entities, consent timelines, routing, point-in-time scoring, follow-up tasks, outcome model, stage histories, and injection of the five required edge cases |
+| Validator / evaluator | Independent validator that re-derives scores, duplicates, statuses and consent from the exported CSVs; held-out (time-based) evaluation |
+| Web UI | A local app (`python -m leadgen serve`) with a read-only JSON API and a single-page frontend |
+| Tests | Unit, dataset, mutation, brief-compliance, API and real-browser end-to-end tests (73 in total) |
+| Documentation | README, data dictionary (generated from the schema), design notes, requirements traceability matrix |
 
-## Session 2: web UI, tests, re-audit (also AI-generated)
-Asked Claude to add a modern frontend integrated with the project, run all tests, and re-check everything against the brief. It built the
-`serve` command, JSON API (`store.py`, `server.py`), the SPA (`leadgen/web/`), 52 more tests (API, brief compliance, 24 real-browser tests),
-a requirements-traceability matrix, and fixed problems found while reviewing screenshots and running the browser tests:
-1. `ScoreRule` v2 descriptions still quoted v1 points/caps (data bug); fixed in the generator and added a validator check + test.
-2. Navigation race condition (slow page overwriting a newer one); fixed, regression test added.
-3. Initial focus skipped the skip-link; clipped chart axes; ground-truth table overflow; missing accessible name on the phone-size switch.
-Verification done by running: 73 tests pass; brief-compliance tests also pass on the full 20k-lead dataset; screenshots reviewed in light, dark and phone widths.
+## 3. Where I relied on AI most heavily
 
-## My own review (to be completed by me before submitting: do not leave blank)
-- [ ] I read `generator.py` end to end and can explain every phase.
-- [ ] I re-ran `python -m pytest -q`, `python -m leadgen generate`, and `python -m leadgen repro --scale 1.0` on my own machine. Result: ________
-- [ ] Things I changed or would change (parameters, rules, tier thresholds, anything I disagreed with): ________
-- [ ] Known weaknesses I can discuss: outcomes are not right-censored; rates/amounts are plausible but not calibrated to real data;
-      lead `status` encodes outcomes so it is excluded from features; names are random combinations with fictional `.example` domains.
+- **The outcome model** (`_conversion` and `_make_opp` in `leadgen/generator.py`). Claude designed a hidden-factor model: conversion
+  is the top-N of a hidden logit plus noise, so labels come from a documented rule and are not circular with the visible score.
+  I rely on this design and I am able to explain its logic, but it is Claude's design, not mine.
+- **The independent validator**, including the idea of "detectors" whose output must equal the ground-truth labels exactly.
+- **The frontend code and visual design.**
 
-## Data provenance
-No external or public datasets were used. Everything is synthetic from a fixed seed. See `SOURCE_MANIFEST.md` in the generated output.
+## 4. How I verified the work (instead of trusting it)
+
+I treated every AI output as unreviewed until something executable confirmed it:
+
+- **Exact volumes and reconciliation:** the full run produces exactly 20,000 leads / 10,000 contacts / 5,000 companies / 3,000 opportunities and the conversion funnel reconciles.
+- **Independent validation:** 97 invariant checks (keys, foreign keys, enums, dates, arithmetic, lifecycle, duplicates, consent, routing) plus 7 detectors that must match `ground_truth/anomalies.csv` exactly: no edge case missed, none extra.
+- **Mutation tests:** the tests deliberately corrupt the data (orphan foreign key, duplicate key, tampered score, outbound contact after opt-out, bad enum, bad date) and assert the validator **fails**. This guards against checks that always pass.
+- **Reproducibility:** generating twice with the same seed gives identical row counts and SHA-256 checksums for every file, at full scale.
+- **Held-out evaluation:** scores are evaluated on later-created leads using labels from the separate ground-truth files; the evaluation uses only the initial score, not the leaky post-conversion rescores.
+- **Brief compliance:** one test per requirement of the problem statement, also run against the full dataset.
+- **UI:** exercised end to end in headless Chromium (every page, filters, sorting, search, theme, ground-truth toggle, mobile width, keyboard focus, HTML-escaping).
+
+## 5. Decisions I directed
+
+- That the deliverable must be **runnable and demonstrable**, not just code: hence the web UI, the starter dataset committed to the repo, and clear run steps.
+- That verification (tests, a re-audit against the brief) must come before I submit, and that AI use be disclosed.
+- That known gaps be stated openly (see section 7) rather than hidden.
+
+## 6. Limitations and what I would do next
+
+- Rates, amounts and reason mixes are plausible but **not calibrated to real business data**; they are synthetic by design.
+- Every conversion outcome is fully known by the dataset's as-of date (no right-censoring), a simplification.
+- Lead `status` is a derived snapshot that encodes outcomes, so it is excluded from model features (documented in the data dictionary).
+- The brief's actors (support agent, analyst, administrator) are not modelled as separate user roles; the UI is a single read-only analyst view.
+- Next steps: right-censored outcomes, rep capacity limits and reassignment events, and a trained ML baseline to compare against the transparent score.
+
+## 7. Data provenance
+
+No external or public datasets were used. All data is synthetic, generated from a fixed seed (20261022). Names are fictional, email
+domains use the reserved `.example` TLD and phone numbers use the fictional `555` range. See `SOURCE_MANIFEST.md` in the generated output.

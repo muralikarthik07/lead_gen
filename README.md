@@ -5,10 +5,10 @@ Deterministic, **standard-library-only** (Python 3.10+) generator that builds a 
 separate ground truth, an independent validator, a held-out evaluation, and reproducibility proof.
 
 ## Quick start
-```bash
+```bash   
 python -m leadgen serve --open                    # web UI on the committed starter dataset: nothing to generate first
 python -m leadgen generate --out output/full      # 20,000 leads / 10,000 contacts / 5,000 companies / 3,000 opps (~40 s)
-python -m leadgen serve --dir output/full --open  # explore the full dataset
+python -m leadgen serve --dir output/full --open   # explore the full dataset
 python -m leadgen generate --scale 0.05 --out data/starter   # same generator, starter volumes (~1 s)
 python -m leadgen validate --dir output/full
 python -m leadgen evaluate --dir output/full
